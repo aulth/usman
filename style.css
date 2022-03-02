@@ -290,7 +290,7 @@ body
   align-items: center;
   flex-wrap: wrap;
 }
-.project1, .project2, .project3, .project4, .project5, .project6, .project7
+.project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8
 {
   width: 170px;
   border: 1px solid black;
@@ -299,7 +299,7 @@ body
   margin: 5px;
   cursor: pointer;
 }
-.project1:hover , .project2:hover , .project3:hover , .project4:hover, .project5:hover, .project6:hover, .project7:hover
+.project1:hover , .project2:hover , .project3:hover , .project4:hover, .project5:hover, .project6:hover, .project7:hover, .project8:hover
 {
   /* background-color: rgba(255, 255, 255, 0.51); */
   background-color: rgba(255, 255, 255, 0.51);

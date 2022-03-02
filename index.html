@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="theme-color" content="#232528">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://i.ibb.co/3NN64R4/usman.jpg' rel='icon' type='image/x-icon'/>
+  <meta name="author" content="Mohd Usman">
+  <meta property="og:title" content="Mohd Usman : Portfolio" />
+  <meta property="og:description" content="I create beautiful design that makes difference." />
+  <meta property="og:url" content="http://aulth.github.io/usman" />
+  <meta property="og:image" content="https://i.ibb.co/3NN64R4/usman.jpg" />
+  <link rel="stylesheet" href="stylee.scss">
+  <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mohd Usman</title>
+</head>
+<body>
+    <div class="header">
+      <!-- <img src="" id="logo" alt="icon"> -->
+      <nav>
+        <ul>
+          <li onclick="location.href='#skills'">Skills</li>
+          <li onclick="location.href='#projects'">Projects</li>
+          <li onclick="location.href='#contact'">Contact</li>
+        </ul>
+      </nav>
+      <div onclick="location.href='https://raw.githubusercontent.com/aulth/usman/main/cv_mohd_usman.pdf'" id="download-cv">Download CV</div>
+    </div>
+    <div class="main">
+      <div class="page1 jad">
+        <div class="page1-content glassmorphism">
+          <h2>Mohd Usman</h2>
+          <h4>Full Stack Web Developer</h4>
+            <button onclick="location.href='#about'">Personal Info</button>
+            <button id="contact-btn" onclick="location.href='#contact'">Contact</button>
+        </div>
+      </div>
+
+      <div id="about" class="personal-info jad">
+        <ul>
+          <li>Name : Mohd Usman</li>
+          <li>Nationality : Indian</li>
+        </ul>
+        <ul>
+          <li>Location : Gorakhpur    </li>
+          <li> <a href="mailto:yemusman@gmail.com">Mail</a></li>
+        </ul>
+      </div>
+
+      <div id="skills" class="skill jad">     
+        <div class="progress-bar">
+          <div class="progress blogger">Blogger</div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress cpp"> C++</div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress css">CSS</div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress html">HTML</div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress js">Javascript</div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress nodejs">Node.JS</div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress reactjs">React.JS</div>
+        </div>
+      </div>
+
+      <div id="projects" class="project jad">
+        <h2 >Projects</h2>
+        <div class="project-box">
+            <div class="project1">
+              <a target="_blank" href="https://aulth.github.io/bijlivibhag"><img src="bijlivibhag.jpg" id="project-image" alt="BijliVibhag"></a>
+               Bijli Vibhag
+            </div>
+            <div class="project2">
+              <a target="_blank" href="https://aulth.github.io/usman"><img id="project-image"  src="portfolio.jpg" alt="my own portfolio"></a>
+               My own portfolio website
+            </div>
+            <div class="project3">
+              <a target="_blank" href="https://aulth.github.io/sai-buzurg"><img id="project-image"  src="saibuzurg.jpg" alt="VillageWebsite"></a>
+               Village website
+            </div>
+            <div class="project4">
+              <a target="_blank" href="https://aulth.github.io/digital-clock"><img id="project-image"  src="digital-clock.jpg" alt="DigitalClock"></a>
+               Digital Clock
+            </div>
+            <div class="project5">
+              <a target="_blank" href="https://aulth.github.io/textmonkey"><img id="project-image"  src="textmonkey.png" alt="TextMonkey"></a>
+               TextMonkey
+            </div>
+           <div class="project6">
+              <a target="_blank" href="https://collegequora.herokuapp.com/"><img id="project-image"  src="collegequora.png" alt="CollegeQuora"></a>
+               CollegeQuora
+            </div>
+            <div class="project7">
+              <a target="_blank" href="https://newsshort.vercel.app/"><img id="project-image"  src="newsshort.png" alt="newshort"></a>
+               NewsShort
+            </div>
+        </div>
+      </div>
+
+      <div id="contact" class="contact jad">
+        
+        <form class="glassmorphism" name="google-sheet">
+          <div class="social jad">
+            
+            <i onclick="window.open('https://facebook.com/yem.usman')" class="fab fa-facebook-square"></i> <i onclick="window.open('https://instagram.com/yem_usman')"  class="fab fa-instagram"></i>
+            <i onclick="window.open('https://')"  class="fab fa-telegram-plane"></i> <i onclick="window.open('https://github.com/aulth')"  class="fab fa-github"></i>
+            <i onclick="window.open('https://www.hackerrank.com/yem_usman')"  class="fab fa-hackerrank"></i> 
+          </div>
+          <input class="glassmorphism" type="text" name="Name" id="name" placeholder="Name" required> 
+          <input class="glassmorphism" type="email" name="Email" placeholder="Email" required>
+          <input class="glassmorphism" type="tel" name="Phone" placeholder="Phone" required>
+          <textarea class="glassmorphism" name="Message" placeholder="Message"></textarea>
+          <input class="glassmorphism submit" type="submit" name="submit" value="Conact">
+          <div style="display: none;" class="process jad"><img style="width: 20px;" src="process.gif" alt=""></div>
+        </form>
+      </div>
+      <div style="display: none;"  id="thank-you" class="thankyou jad">
+        <div  class="message-box jad glassmorphism">
+          <h2 id="thank-you-name" style="text-align: center;"></h2>
+          <h5 style="margin-top:10px;">Your message has been sent.</h5>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      function submission(a)
+      {
+      w3.show('.thankyou');
+      document.getElementById('thank-you').style.display = "flex";
+      document.getElementById('thank-you-name').innerHTML = "Thank you, " + a;
+      location.href='#thank-you';
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzRYusCRUh69EPV-85nVoCXC_lkmISMXka6NbnIb78XSisJYNTIqL_osAtLzEDbmxKL/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      let user_name = document.getElementById('name').value;
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => submission(user_name))
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@font-face {
+    font-family: 'magilio';
+    src: url('/magilio.otf');
+}
+body {
+  background: rgb(253,239,218);
+  background: linear-gradient(153deg, rgba(253,239,218,1) 0%, rgba(253,231,234,1) 96%);
+  box-size: border-box;
+  padding: 15px;
+}
+html{
+scroll-behavior: smooth;
+}
+.glass {
+    /* border-radius: 18px; */
+background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.screen-full{
+    min-height: calc(100vh - 30px);
+}
+.home nav{
+    font-family: 'Cairo', sans-serif;
+}
+.name-title{
+    font-family: 'magilio';
+}
+.social-icon{
+    width: 40px;
+}
+/*create a fade animation */
+.slide {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

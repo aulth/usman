@@ -16,6 +16,7 @@ export default function Home() {
         <meta property="og:description" content="Full Stack Web Devloper with skills of NextJs, ReactJs, Nodejs, Mongodb,SQL etc." />
         <meta property="og:url" content="http://aulth.github.io/usman" />
         <meta property="og:image" content="https://i.ibb.co/3NN64R4/usman.jpg" />
+        <meta name="google-site-verification" content="2Ii8X_9GYq3lZtKo33o6boJYW9GMfW3hWW1IhUKLKHE" />
       </Head>
       <main>
         <div className='glass rounded-[18px] screen-full mb-[15px]' >

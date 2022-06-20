@@ -10,6 +10,12 @@ export default function Home() {
         <title>Mohd Usman : Portfolio</title>
         <meta name="description" content="Full Stack Web Devloper with skills of ReacJs, NodeJs, MongoDb, Nextjs, HTML, CSS, Javascript SQL, etc." />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="theme-color" content="#FDEFDA" />
+        <meta name="author" content="Mohd Usman" />
+        <meta property="og:title" content="Mohd Usman : Portfolio" />
+        <meta property="og:description" content="Full Stack Web Devloper with skills of NextJs, ReactJs, Nodejs, Mongodb,SQL etc." />
+        <meta property="og:url" content="http://aulth.github.io/usman" />
+        <meta property="og:image" content="https://i.ibb.co/3NN64R4/usman.jpg" />
       </Head>
       <main>
         <div className='glass rounded-[18px] screen-full mb-[15px]' >
@@ -33,7 +39,7 @@ export default function Home() {
                 <a href="#contact"><button className="p-2 rounded-lg mt-5 ml-2 glass hover:bg-green-200">Contact</button></a>
               </div>
             </div>
-            <Crousel/>
+            <Crousel />
           </div>
         </div>
         <div className="glass rounded-[18px] screen-full flex flex-col items-center mb-[15px]">

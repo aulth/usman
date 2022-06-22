@@ -11,6 +11,8 @@ const BijliVibhag = (props) => {
         website: 'https://aulth.github.io/bijlivibhag/',
         logo:'https://i.ibb.co/F5K5WQ9/icon-min.png',
         title: 'Bijli Vibhag',
+        created:'13/09/21',
+        updated:'02/11/21'
     }
     const technology = { html: true, css: true, github:true}
     return (

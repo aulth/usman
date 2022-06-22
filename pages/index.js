@@ -3,6 +3,7 @@ import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import Link from 'next/link'
 import Crousel from '../components/Crousel'
+import Image from 'next/image'
 export default function Home() {
   return (
     <div>
@@ -51,36 +52,37 @@ export default function Home() {
         </div>
         <div className="glass rounded-[18px] screen-full flex flex-col items-center relative mb-[15px]">
           <h2 className='text-2xl font-semibold absolute left-0 rounded-tl-[18px] p-2 top-0 bg-green-200 '>Skills</h2>
-          <p className='absolute right-[8px] top-[4px]'>The ability to do something well; expertise</p>
           <Skills />
         </div>
         <div id='contact' className="glass screen-full rounded-[18px] flex flex-col items-center px-2">
           <h2 className='text-2xl font-semibold mt-1'>Contact</h2>
           <div className="glass rounded-xl md:w-1/2 w-full mt-2">
             <div className="social-media w-full flex justify-center mt-2">
-              <img src="/social/facebook.svg" className='social-icon m-1' alt="facebook" />
-              <img src="/social/github.svg" className='social-icon m-1' alt="github" />
-              <img src="/social/instagram.svg" className='social-icon m-1' alt="instagram" />
-              <img src="/social/linkedin.svg" className='social-icon m-1' alt="linkedin" />
-              <img src="/social/telegram.svg" className='social-icon m-1' alt="telegram" />
-              <img src="/social/twitter.svg" className='social-icon m-1' alt="twitter" />
-              <img src="/social/youtube.svg" className='social-icon m-1' alt="youtube" />
+              <Image width={40} height={40} src="/social/facebook.svg" className='social-icon m-1' alt="facebook" />
+              <Image width={40} height={40} src="/social/github.svg" className='social-icon m-1' alt="github" />
+              <Image width={40} height={40} src="/social/instagram.svg" className='social-icon m-1' alt="instagram" />
+              <Image width={40} height={40} src="/social/linkedin.svg" className='social-icon m-1' alt="linkedin" />
+              <Image width={40} height={40} src="/social/telegram.svg" className='social-icon m-1' alt="telegram" />
+              <Image width={40} height={40} src="/social/twitter.svg" className='social-icon m-1' alt="twitter" />
+              <Image width={40} height={40} src="/social/youtube.svg" className='social-icon m-1' alt="youtube" />
             </div>
             <form className='w-full box-border p-2'>
               <div className="w-full flex items-center glass rounded border my-1 p-1">
-                <img src="https://img.icons8.com/color/48/undefined/name--v1.png" className='w-[25px]' alt="" />
+                <Image width={25} height={25} src={'/images/name.png'} className='w-[25px]' alt="" />
                 <input type="text" name='name' className='w-full bg-transparent focus:outline-none pl-1' placeholder='Enter your name' />
               </div>
               <div className="w-full flex items-center glass rounded border my-1 p-1">
-                <img src="https://img.icons8.com/fluency/48/undefined/email-open.png" className='w-[25px]' alt="" />
+                <Image width={25} height={25} src={'/images/email.png'} className='w-[25px]' alt="" />
                 <input type="email" name='email' className='w-full bg-transparent focus:outline-none pl-1' placeholder='Enter your email' />
               </div>
               <div className="w-full flex items-center glass rounded border my-1 p-1">
-                <img src="/social/whatsapp.svg" className='w-[25px]' alt="" />
+                <Image width={25} height={25} src="/social/whatsapp.svg" className='w-[25px]' alt="" />
                 <input type="tel" name='whatsapp' className='w-full bg-transparent focus:outline-none pl-1' placeholder='Enter your whatsapp number' />
               </div>
               <div className="w-full flex items-center glass rounded border my-1 p-1 pt-0">
-                <img src="https://img.icons8.com/fluency/48/undefined/topic.png" className='w-[25px] absolute top-0' alt="" />
+                <div className='absolute top-0' >
+                  <Image width={25} height={25} src={'/images/topic.png'} alt="" />
+                </div>
                 <textarea name='whatsapp' className='w-full bg-transparent focus:outline-none pl-[31px] ' rows={3} placeholder='Type your message...' />
               </div>
               <button className='flex items-center p-1 rounded glass border border-orange-300 font-semibold'>Send <img className='w-[20px] ml-2' src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/undefined/external-send-contact-flatart-icons-flat-flatarticons.png" alt="" /></button>

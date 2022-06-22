@@ -11,6 +11,8 @@ const EmailSpemmer = (props) => {
         website: 'https://email-spemmer.vercel.app/',
         logo:'https://email-spemmer.vercel.app/favicon.ico',
         title: 'Email Spemmer',
+        created:'17/03/22',
+        updated:'30/03/22'
     }
     const technology = { html: true, css: true, js:true, reactjs:true, nodejs:true, heroku:true, vercel:true, github:true}
     return (

@@ -11,6 +11,8 @@ const DigitalClock = (props) => {
         website: 'https://aulth.github.io/digital-clock/',
         logo:'https://i.ibb.co/txTvZGP/clock.jpg',
         title: 'Digital Clock',
+        created:'06/09/21',
+        updated:'No update'
     }
     const technology = { html: true, css: true, js:true}
     return (

@@ -9,8 +9,10 @@ const CollegeQuora = (props) => {
         demo: 'https://collegequora.herokuapp.com/',
         github: 'https://github.com/aulth/quora-for-college',
         website: 'https://collegequora.herokuapp.com/',
-        logo:'https://collegequora.herokuapp.com/favicon.ico',
+        logo:'/images/collegequora.ico',
         title: 'College Quora',
+        created:'11/03/22',
+        updated:'09/06/22'
     }
     const technology = { html: true, css: true, js:true, reactjs:true, nodejs:true, heroku:true, mysql:true}
     return (

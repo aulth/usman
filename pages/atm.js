@@ -11,6 +11,8 @@ const Atm = (props) => {
         website: 'https://aulth.github.io/atm/',
         logo:'https://aulth.github.io/atm/icon.png',
         title: 'ATM',
+        created:'11/04/22',
+        updated:'20/06/22'
     }
     const technology = { html: true, css: true, js: true, reactjs:true, github: true }
     return (

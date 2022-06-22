@@ -11,6 +11,8 @@ const CloudNote = (props) => {
         website: 'https://cloudnote.vercel.app/',
         logo:'https://cloudnote.vercel.app/logo192.png',
         title: 'CloudNote',
+        created:'03/03/22',
+        updated:'04/03/22'
     }
     const technology = { html: true, css: true, js:true, reactjs:true, nodejs:true, vercel:true, github:true}
     return (

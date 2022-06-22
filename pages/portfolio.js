@@ -6,11 +6,13 @@ const Portfolio = (props) => {
         link: props.link,
         screenshot: '/projects/portfolio.jpg',
         description: 'My own portfolio',
-        demo: 'https://aulth.github.io/usman/',
+        demo: 'https://mohd-usman.vercel.app/',
         github: 'https://github.com/aulth/usman',
-        website: 'https://aulth.github.io/usman/',
+        website: 'https://mohd-usman.vercel.app/',
         logo:'https://i.ibb.co/3NN64R4/usman.jpg',
         title: 'Portfolio',
+        created:'02/03/22',
+        updated:'20/06/22'
     }
     const technology = { html: true, css: true, js:true, nodejs:true, reactjs:true, nextjs:true, vercel:true, github:true}
     return (

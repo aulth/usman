@@ -11,6 +11,8 @@ const Add2Cart = (props) => {
         website: 'https://saibuzurg.w3spaces.com/',
         logo:'https://saibuzurg.w3spaces.com/favicon.jpg',
         title: 'Sai Buzurg',
+        created:'02/07/21',
+        updated:'05/05/22'
     }
     const technology = { html: true, css: true, bootstrap:true}
     return (

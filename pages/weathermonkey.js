@@ -11,6 +11,8 @@ const WeatherMonkey = (props) => {
         website: 'https://weather-monkey.vercel.app/',
         logo:'https://weather-monkey.vercel.app/favicon.ico',
         title: 'Weather Monkey',
+        created:'22/03/22',
+        updated:'23/03/22'
     }
     const technology = { html: true, css: true, js:true, reactjs:true, vercel:true, github:true}
     return (

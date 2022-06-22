@@ -11,6 +11,8 @@ const Newsshort = (props) => {
         website: 'https://newsshort.vercel.app/',
         logo:'https://newsshort.vercel.app/logo192.png',
         title: 'NewsShort',
+        created:'02/03/22',
+        updated:'No update'
     }
     const technology = { html: true, css: true, js:true, reactjs:true, vercel:true, github:true}
     return (

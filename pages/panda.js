@@ -11,6 +11,8 @@ const Panda = (props) => {
         website: 'https://mypanda.vercel.app/',
         logo:'https://mypanda.vercel.app/favicon.ico',
         title: 'MyPanda',
+        created:'02/05/22',
+        updated:'04/05/22'
     }
     const technology = { html: true, css: true, js:true, reactjs:true, nodejs:true, nextjs:true, vercel:true, github:true}
     return (

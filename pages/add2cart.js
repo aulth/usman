@@ -11,6 +11,8 @@ const Add2Cart = (props) => {
         website: 'https://add2cart.vercel.app/',
         logo:'/logo/add2cart.png',
         title: 'Add2Cart',
+        created:'12/05/22',
+        updated:'22/05/22'
     }
     const technology = { html: true, css: true, js: true, nodejs: true, reactjs: true, nextjs: true, mongodb: true, tailwind: true, vercel: true, github: true }
     return (

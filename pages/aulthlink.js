@@ -11,6 +11,8 @@ const Aulthlink = (props) => {
         website: 'https://aulthlink.vercel.app/',
         logo:'https://aulthlink.vercel.app/logo192.png',
         title: 'Aulthlink',
+        created:'15/03/22',
+        updated:'17/03/22'
     }
     const technology = { html: true, css: true, js:true, reactjs:true, nodejs:true, mongodb:true, heroku:true, vercel:true, github:true}
     return (

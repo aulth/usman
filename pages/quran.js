@@ -11,6 +11,8 @@ const Quran = (props) => {
         website: 'https://full-quran.vercel.app/',
         logo:'https://full-quran.vercel.app/logo192.png',
         title: 'Full Quran',
+        created:'02/03/22',
+        updated:'No update'
     }
     const technology = { html: true, css: true, js:true, reactjs:true, vercel:true, github:true}
     return (

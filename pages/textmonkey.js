@@ -11,6 +11,8 @@ const TextMonkey = (props) => {
         website: 'https://aulth.github.io/textmonkey/',
         logo:'https://aulth.github.io/textmonkey/favicon.ico',
         title: 'TextMonkey',
+        created:'29/12/21',
+        updated:'No update'
     }
     const technology = { html: true, css: true, js:true, bootstrap:true, reactjs:true}
     return (

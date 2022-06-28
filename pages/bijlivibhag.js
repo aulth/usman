@@ -9,7 +9,7 @@ const BijliVibhag = (props) => {
         demo: 'https://aulth.github.io/bijlivibhag/',
         github: 'https://github.com/aulth/bijlivibhag',
         website: 'https://aulth.github.io/bijlivibhag/',
-        logo:'https://i.ibb.co/F5K5WQ9/icon-min.png',
+        logo:'/logo/bijlivibhag.png',
         title: 'Bijli Vibhag',
         created:'13/09/21',
         updated:'02/11/21'
@@ -31,14 +31,12 @@ const BijliVibhag = (props) => {
 }
 export async function getServerSideProps(context) {
     let { req , resolvedUrl} = context;
-    console.log(resolvedUrl)
     let link;
     if(req){
         link = 'https://'+req.headers.host+resolvedUrl;
     }else{
         link = window.location.protocol+window.location.hostname+window.location.pathname;
     }
-    console.log(link)
     return {
         props: {
             link: link

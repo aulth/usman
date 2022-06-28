@@ -9,7 +9,7 @@ const Add2Cart = (props) => {
         demo: 'https://saibuzurg.w3spaces.com/',
         github: 'https://github.com/aulth/sai-buzurg',
         website: 'https://saibuzurg.w3spaces.com/',
-        logo:'https://saibuzurg.w3spaces.com/favicon.jpg',
+        logo:'/logo/saibuzurg.png',
         title: 'Sai Buzurg',
         created:'02/07/21',
         updated:'05/05/22'
@@ -31,14 +31,12 @@ const Add2Cart = (props) => {
 }
 export async function getServerSideProps(context) {
     let { req , resolvedUrl} = context;
-    console.log(resolvedUrl)
     let link;
     if(req){
         link = 'https://'+req.headers.host+resolvedUrl;
     }else{
         link = window.location.protocol+window.location.hostname+window.location.pathname;
     }
-    console.log(link)
     return {
         props: {
             link: link

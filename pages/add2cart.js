@@ -31,14 +31,12 @@ const Add2Cart = (props) => {
 }
 export async function getServerSideProps(context) {
     let { req , resolvedUrl} = context;
-    console.log(resolvedUrl)
     let link;
     if(req){
         link = 'https://'+req.headers.host+resolvedUrl;
     }else{
         link = window.location.protocol+window.location.hostname+window.location.pathname;
     }
-    console.log(link)
     return {
         props: {
             link: link

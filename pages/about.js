@@ -1,10 +1,9 @@
 import React from 'react'
-import Link from 'next/link'
 const About = () => {
     return (
         <>
             <div className='glass rounded-[18px] box-border screen-full mb-[15px]' >
-                <Link href={'/'} ><img src="https://img.icons8.com/ios/50/undefined/back--v1.png" className='w-[20px] absolute top-2 left-1 cursor-pointer' alt="" /></Link>
+                {/* <Link href={'/'} ><Image width={20} height={20} src="https://img.icons8.com/ios/50/undefined/back--v1.png" className='absolute top-2 left-1 cursor-pointer' alt="back" /></Link> */}
                 <div className="w-full flex flex-col items-end px-4 py-2 border-b border-gray-400">
                     <h2 className="text-2xl font-semibold">Mohd Usman</h2>
                     <p>Sant Kabir Nagar, (U.P.) 272199, +91 9839872992</p>

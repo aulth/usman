@@ -9,7 +9,7 @@ const EmailSpemmer = (props) => {
         demo: 'https://email-spemmer.vercel.app/',
         github: 'https://github.com/aulth/email-spemmer',
         website: 'https://email-spemmer.vercel.app/',
-        logo:'https://email-spemmer.vercel.app/favicon.ico',
+        logo:'/logo/emailspemmer.png',
         title: 'Email Spemmer',
         created:'17/03/22',
         updated:'30/03/22'
@@ -31,14 +31,12 @@ const EmailSpemmer = (props) => {
 }
 export async function getServerSideProps(context) {
     let { req , resolvedUrl} = context;
-    console.log(resolvedUrl)
     let link;
     if(req){
         link = 'https://'+req.headers.host+resolvedUrl;
     }else{
         link = window.location.protocol+window.location.hostname+window.location.pathname;
     }
-    console.log(link)
     return {
         props: {
             link: link

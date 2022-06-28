@@ -9,7 +9,7 @@ const Portfolio = (props) => {
         demo: 'https://mohd-usman.vercel.app/',
         github: 'https://github.com/aulth/usman',
         website: 'https://mohd-usman.vercel.app/',
-        logo:'https://i.ibb.co/3NN64R4/usman.jpg',
+        logo:'/logo/usman.png',
         title: 'Portfolio',
         created:'02/03/22',
         updated:'20/06/22'
@@ -31,14 +31,12 @@ const Portfolio = (props) => {
 }
 export async function getServerSideProps(context) {
     let { req , resolvedUrl} = context;
-    console.log(resolvedUrl)
     let link;
     if(req){
         link = 'https://'+req.headers.host+resolvedUrl;
     }else{
         link = window.location.protocol+window.location.hostname+window.location.pathname;
     }
-    console.log(link)
     return {
         props: {
             link: link

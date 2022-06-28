@@ -9,7 +9,7 @@ const Aulthlink = (props) => {
         demo: 'https://aulthlink.vercel.app/',
         github: 'https://github.com/aulth/link-shortner',
         website: 'https://aulthlink.vercel.app/',
-        logo:'https://aulthlink.vercel.app/logo192.png',
+        logo:'/logo/aulthlink.png',
         title: 'Aulthlink',
         created:'15/03/22',
         updated:'17/03/22'
@@ -31,14 +31,12 @@ const Aulthlink = (props) => {
 }
 export async function getServerSideProps(context) {
     let { req , resolvedUrl} = context;
-    console.log(resolvedUrl)
     let link;
     if(req){
         link = 'https://'+req.headers.host+resolvedUrl;
     }else{
         link = window.location.protocol+window.location.hostname+window.location.pathname;
     }
-    console.log(link)
     return {
         props: {
             link: link

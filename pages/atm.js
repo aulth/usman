@@ -9,7 +9,7 @@ const Atm = (props) => {
         demo: 'https://aulth.github.io/atm/',
         github: 'https://github.com/aulth/atm',
         website: 'https://aulth.github.io/atm/',
-        logo:'https://aulth.github.io/atm/icon.png',
+        logo:'/logo/atm.png',
         title: 'ATM',
         created:'11/04/22',
         updated:'20/06/22'
@@ -31,14 +31,12 @@ const Atm = (props) => {
 }
 export async function getServerSideProps(context) {
     let { req , resolvedUrl} = context;
-    console.log(resolvedUrl)
     let link;
     if(req){
         link = 'https://'+req.headers.host+resolvedUrl;
     }else{
         link = window.location.protocol+window.location.hostname+window.location.pathname;
     }
-    console.log(link)
     return {
         props: {
             link: link

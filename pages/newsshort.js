@@ -9,7 +9,7 @@ const Newsshort = (props) => {
         demo: 'https://newsshort.vercel.app/',
         github: 'https://github.com/aulth/news-short',
         website: 'https://newsshort.vercel.app/',
-        logo:'https://newsshort.vercel.app/logo192.png',
+        logo:'/logo/newsshort.png',
         title: 'NewsShort',
         created:'02/03/22',
         updated:'No update'
@@ -31,14 +31,12 @@ const Newsshort = (props) => {
 }
 export async function getServerSideProps(context) {
     let { req , resolvedUrl} = context;
-    console.log(resolvedUrl)
     let link;
     if(req){
         link = 'https://'+req.headers.host+resolvedUrl;
     }else{
         link = window.location.protocol+window.location.hostname+window.location.pathname;
     }
-    console.log(link)
     return {
         props: {
             link: link

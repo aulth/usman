@@ -9,7 +9,7 @@ const CloudNote = (props) => {
         demo: 'https://cloudnote.vercel.app/',
         github: 'https://github.com/aulth/cloud-note',
         website: 'https://cloudnote.vercel.app/',
-        logo:'https://cloudnote.vercel.app/logo192.png',
+        logo:'/logo/cloudnote.png',
         title: 'CloudNote',
         created:'03/03/22',
         updated:'04/03/22'
@@ -31,14 +31,12 @@ const CloudNote = (props) => {
 }
 export async function getServerSideProps(context) {
     let { req , resolvedUrl} = context;
-    console.log(resolvedUrl)
     let link;
     if(req){
         link = 'https://'+req.headers.host+resolvedUrl;
     }else{
         link = window.location.protocol+window.location.hostname+window.location.pathname;
     }
-    console.log(link)
     return {
         props: {
             link: link

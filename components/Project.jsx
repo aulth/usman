@@ -14,9 +14,9 @@ const Project = (props) => {
     }
     return (
         <>
-            <div className="project glass md:h-[160px] md:w-[190px] w-full rounded rounded-t-small m-1 flex md:flex-col box-border">
+            <div className="project border border-gray-300 md:h-[160px] md:w-[190px] w-full rounded rounded-t-small m-1 flex md:flex-col box-border">
                 <div className="project-image relative">
-                    <Image quality={100} priority={true} height={112} width={200} onMouseEnter={() => {showLink(props.id)}} src={props.image} alt={props.title}  />
+                    <Image priority={true} height={112} width={200} layout="responsive" onMouseEnter={() => {showLink(props.id)}} src={props.image} alt={props.title}  />
                     <div  onMouseLeave={()=>{hideLink(props.id)}} className="w-full absolute h-full top-0 glass justify-center items-center hidden transition duration-300" id={props.id}>
                         <div className="glass rounded px-1">
                             <Link  href={`/${props.id}`}><button className='pr-1 hover:underline hover:text-black text-gray-600'>Info</button></Link>

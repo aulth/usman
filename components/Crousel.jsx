@@ -11,11 +11,11 @@ const Crousel = () => {
     }
     return (
         <div style={{ minHeight: 'calc(100vh - 78px)' }} className="w-full rounded-br-[10px] hidden md:flex justify-center items-center box-border">
-            <img onClick={next} className='cursor-pointer w-[40px]' src="https://img.icons8.com/ios/50/undefined/circled-chevron-left.png" />
+            <Image onClick={next} width={40} height={40} alt="prev" className='cursor-pointer' src="https://img.icons8.com/ios/50/undefined/circled-chevron-left.png" />
             <div className='home-crousel'>
-                <Image width={400} height={400} className='w-[400px] slide slide1' src={avatar} />
+                <Image width={400} height={400} className='w-[400px] slide slide1' alt={avatar} src={avatar} />
             </div>
-            <img onClick={prev} className='cursor-pointer w-[40px]' src="https://img.icons8.com/ios/50/undefined/circled-chevron-right.png" />
+            <Image onClick={prev} width={40} height={40} alt="next"  className='cursor-pointer w-[40px]' src="https://img.icons8.com/ios/50/undefined/circled-chevron-right.png" />
         </div>
     )
 }

@@ -9,7 +9,7 @@ const TextMonkey = (props) => {
         demo: 'https://aulth.github.io/textmonkey/',
         github: 'https://github.com/aulth/textmonkey',
         website: 'https://aulth.github.io/textmonkey/',
-        logo:'https://aulth.github.io/textmonkey/favicon.ico',
+        logo:'/logo/textmonkey.png',
         title: 'TextMonkey',
         created:'29/12/21',
         updated:'No update'
@@ -31,14 +31,12 @@ const TextMonkey = (props) => {
 }
 export async function getServerSideProps(context) {
     let { req , resolvedUrl} = context;
-    console.log(resolvedUrl)
     let link;
     if(req){
         link = 'https://'+req.headers.host+resolvedUrl;
     }else{
         link = window.location.protocol+window.location.hostname+window.location.pathname;
     }
-    console.log(link)
     return {
         props: {
             link: link

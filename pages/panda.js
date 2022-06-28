@@ -9,7 +9,7 @@ const Panda = (props) => {
         demo: 'https://mypanda.vercel.app/',
         github: 'https://github.com/aulth/panda',
         website: 'https://mypanda.vercel.app/',
-        logo:'https://mypanda.vercel.app/favicon.ico',
+        logo:'/logo/panda.png',
         title: 'MyPanda',
         created:'02/05/22',
         updated:'04/05/22'
@@ -31,14 +31,12 @@ const Panda = (props) => {
 }
 export async function getServerSideProps(context) {
     let { req , resolvedUrl} = context;
-    console.log(resolvedUrl)
     let link;
     if(req){
         link = 'https://'+req.headers.host+resolvedUrl;
     }else{
         link = window.location.protocol+window.location.hostname+window.location.pathname;
     }
-    console.log(link)
     return {
         props: {
             link: link

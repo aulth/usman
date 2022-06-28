@@ -1,9 +1,13 @@
 import Head from 'next/head'
+import { useEffect, useState } from 'react'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import Link from 'next/link'
 import Crousel from '../components/Crousel'
 import Image from 'next/image'
+import ReactTyped from 'react-typed';
+import Contact from '../components/Contact'
+import Social from '../components/Social'
 export default function Home() {
   return (
     <div>
@@ -26,19 +30,19 @@ export default function Home() {
               <li className='absolute left-3 font-bold text-lg'>Portfolio</li>
               <Link href={'/'} ><li className='ml-2 cursor-pointer hover:font-semibold'>Home</li></Link>
               <Link href={'/about'} ><li className='ml-2 cursor-pointer hover:font-semibold'>About</li></Link>
-              <a href="#contact"><li className='ml-2'>Contact</li></a>
+              <a href="#contact"><li className='ml-2  hover:font-semibold'>Contact</li></a>
             </ul>
           </nav>
           <div className="flex flex-col items-center md:flex-row md:justify-around box-border">
             <div style={{ minHeight: 'calc(100vh - 78px)' }} className="w-full flex flex-col justify-center items-center md:justify-around rounded-bl-[10px]">
-              <div className='text-center md:text-left'>
-                <h2 className="text-[4rem] name-title">Hy! I Am</h2>
-                <h2 className="text-[4rem] name-title text-orange-400">
+              <div className='text-center md:text-left md:p-0 px-5'>
+                <h2 className="md:text-[4rem] text-[3rem] name-title" id='greet'>Hy! I Am</h2>
+                <h2 className="md:text-[4rem] text-[3rem] name-title text-[#FB8574]">
                   Mohd Usman
                 </h2>
-                <h2 className='text-xl'>Full Stack Web Developer</h2>
-                <a href="/cv_mohd_usman.pdf" download={true}><button className="p-2 rounded-lg mt-5 glass hover:bg-orange-200">Download CV</button></a>
-                <a href="#contact"><button className="p-2 rounded-lg mt-5 ml-2 glass hover:bg-green-200">Contact</button></a>
+                <h2 className="text-xl font-semibold"><ReactTyped strings={['Front-End Web Developer', 'Back-End Web Developer', 'Full Stack Web Developer']} typeSpeed={100} backSpeed={50} loop smartBackspace /></h2>
+                <a href="/cv_mohd_usman.pdf" download={true}><button className="p-2 rounded-lg mt-5 glass font-semibold text-sm hover:text-[#F7FBFF] hover:bg-[#FB8574]">Download CV</button></a>
+                <a href="#contact"><button className="p-2 rounded-lg mt-5 ml-2 glass hover:bg-[#171E2B] font-semibold text-sm hover:text-[#F7FBFF]">Contact</button></a>
               </div>
             </div>
             <Crousel />
@@ -51,43 +55,15 @@ export default function Home() {
           </div>
         </div>
         <div className="glass rounded-[18px] screen-full flex flex-col items-center relative mb-[15px]">
-          <h2 className='text-2xl font-semibold absolute left-0 rounded-tl-[18px] p-2 top-0 bg-green-200 '>Skills</h2>
+          <h2 className='text-2xl font-semibold absolute left-0 rounded-tl-[18px] p-2 top-0 bg-[#171E2B] cursor-default hover:bg-[#FB8574] text-[#F7FBFF] '>Skills</h2>
           <Skills />
         </div>
-        <div id='contact' className="glass screen-full rounded-[18px] flex flex-col items-center px-2">
-          <h2 className='text-2xl font-semibold mt-1'>Contact</h2>
-          <div className="glass rounded-xl md:w-1/2 w-full mt-2">
-            <div className="social-media w-full flex justify-center mt-2">
-              <Image width={40} height={40} src="/social/facebook.svg" className='social-icon m-1' alt="facebook" />
-              <Image width={40} height={40} src="/social/github.svg" className='social-icon m-1' alt="github" />
-              <Image width={40} height={40} src="/social/instagram.svg" className='social-icon m-1' alt="instagram" />
-              <Image width={40} height={40} src="/social/linkedin.svg" className='social-icon m-1' alt="linkedin" />
-              <Image width={40} height={40} src="/social/telegram.svg" className='social-icon m-1' alt="telegram" />
-              <Image width={40} height={40} src="/social/twitter.svg" className='social-icon m-1' alt="twitter" />
-              <Image width={40} height={40} src="/social/youtube.svg" className='social-icon m-1' alt="youtube" />
-            </div>
-            <form className='w-full box-border p-2'>
-              <div className="w-full flex items-center glass rounded border my-1 p-1">
-                <Image width={25} height={25} src={'/images/name.png'} className='w-[25px]' alt="" />
-                <input type="text" name='name' className='w-full bg-transparent focus:outline-none pl-1' placeholder='Enter your name' />
-              </div>
-              <div className="w-full flex items-center glass rounded border my-1 p-1">
-                <Image width={25} height={25} src={'/images/email.png'} className='w-[25px]' alt="" />
-                <input type="email" name='email' className='w-full bg-transparent focus:outline-none pl-1' placeholder='Enter your email' />
-              </div>
-              <div className="w-full flex items-center glass rounded border my-1 p-1">
-                <Image width={25} height={25} src="/social/whatsapp.svg" className='w-[25px]' alt="" />
-                <input type="tel" name='whatsapp' className='w-full bg-transparent focus:outline-none pl-1' placeholder='Enter your whatsapp number' />
-              </div>
-              <div className="w-full flex items-center glass rounded border my-1 p-1 pt-0">
-                <div className='absolute top-0' >
-                  <Image width={25} height={25} src={'/images/topic.png'} alt="" />
-                </div>
-                <textarea name='whatsapp' className='w-full bg-transparent focus:outline-none pl-[31px] ' rows={3} placeholder='Type your message...' />
-              </div>
-              <button className='flex items-center p-1 rounded glass border border-orange-300 font-semibold'>Send <img className='w-[20px] ml-2' src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/64/undefined/external-send-contact-flatart-icons-flat-flatarticons.png" alt="" /></button>
-            </form>
+        <div id='contact' className="glass screen-full rounded-[18px] flex flex-col  items-center px-2">
+          <h2 className="text-3xl font-bold mt-2">Contact</h2>
+          <div className="container my-2">
+          <Social/>
           </div>
+          <Contact/>
         </div>
       </main>
     </div>

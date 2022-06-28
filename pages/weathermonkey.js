@@ -9,7 +9,7 @@ const WeatherMonkey = (props) => {
         demo: 'https://weather-monkey.vercel.app/',
         github: 'https://github.com/aulth/weather-monkey',
         website: 'https://weather-monkey.vercel.app/',
-        logo:'https://weather-monkey.vercel.app/favicon.ico',
+        logo:'/logo/weathermonkey.png',
         title: 'Weather Monkey',
         created:'22/03/22',
         updated:'23/03/22'
@@ -32,14 +32,12 @@ const WeatherMonkey = (props) => {
 }
 export async function getServerSideProps(context) {
     let { req , resolvedUrl} = context;
-    console.log(resolvedUrl)
     let link;
     if(req){
         link = 'https://'+req.headers.host+resolvedUrl;
     }else{
         link = window.location.protocol+window.location.hostname+window.location.pathname;
     }
-    console.log(link)
     return {
         props: {
             link: link

@@ -9,7 +9,7 @@ const DigitalClock = (props) => {
         demo: 'https://aulth.github.io/digital-clock/',
         github: 'https://github.com/aulth/sai-buzurg',
         website: 'https://aulth.github.io/digital-clock/',
-        logo:'https://i.ibb.co/txTvZGP/clock.jpg',
+        logo:'/logo/digitalclock.png',
         title: 'Digital Clock',
         created:'06/09/21',
         updated:'No update'
@@ -31,14 +31,12 @@ const DigitalClock = (props) => {
 }
 export async function getServerSideProps(context) {
     let { req , resolvedUrl} = context;
-    console.log(resolvedUrl)
     let link;
     if(req){
         link = 'https://'+req.headers.host+resolvedUrl;
     }else{
         link = window.location.protocol+window.location.hostname+window.location.pathname;
     }
-    console.log(link)
     return {
         props: {
             link: link

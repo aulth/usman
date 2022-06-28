@@ -1,8 +1,15 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Technology from './Technology'
 import Link from 'next/link'
 import Image from 'next/image'
 const Project = (props) => {
+    const [width, setWidth] = useState()
+    useEffect(() => {
+      window.addEventListener('resize', () => {
+        setWidth(window.innerWidth)
+        })
+    }, [])
+    
     const showLink = (id)=>{
         let elem = document.getElementById(id)
         elem.style.display = 'flex'
@@ -16,7 +23,7 @@ const Project = (props) => {
         <>
             <div className="project border border-gray-300 md:h-[160px] md:w-[190px] w-full rounded rounded-t-small m-1 flex md:flex-col box-border">
                 <div className="project-image relative">
-                    <Image priority={true} height={112} width={200} layout="responsive" onMouseEnter={() => {showLink(props.id)}} src={props.image} alt={props.title}  />
+                    <Image priority={true} height={112} width={200} layout={width>768?'responsive':''} onMouseEnter={() => {showLink(props.id)}} src={props.image} alt={props.title}  />
                     <div  onMouseLeave={()=>{hideLink(props.id)}} className="w-full absolute h-full top-0 glass justify-center items-center hidden transition duration-300" id={props.id}>
                         <div className="glass rounded px-1">
                             <Link  href={`/${props.id}`}><button className='pr-1 hover:underline hover:text-black text-gray-600'>Info</button></Link>

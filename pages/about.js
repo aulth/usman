@@ -1,11 +1,11 @@
 import React from 'react'
+import Link from 'next/link'
 const About = () => {
     return (
         <>
             <div className='glass rounded-[18px] box-border screen-full mb-[15px]' >
-                {/* <Link href={'/'} ><Image width={20} height={20} src="https://img.icons8.com/ios/50/undefined/back--v1.png" className='absolute top-2 left-1 cursor-pointer' alt="back" /></Link> */}
                 <div className="w-full flex flex-col items-end px-4 py-2 border-b border-gray-400">
-                    <h2 className="text-2xl font-semibold">Mohd Usman</h2>
+                    <Link href="/" ><h2 className="text-2xl font-semibold cursor-pointer duration-200 hover:scale-105">Mohd Usman</h2></Link>
                     <p>Sant Kabir Nagar, (U.P.) 272199, +91 9839872992</p>
                 </div>
                 <div className="w-full p-2 pb-4 border-b border-gray-400">

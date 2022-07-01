@@ -17,7 +17,6 @@ const Appsidebar = (props) => {
     }
     return (
         <div style={{ minHeight: 'calc(100vh - 46px' }} className="glass md:w-[25%] w-full rounded-lg overflow-y-auto">
-            {/* <Link href={'/'} ><Image src="https://img.icons8.com/ios/50/undefined/back--v1.png" width={20} height={20} className=' absolute top-2 left-1 cursor-pointer' alt="" /></Link> */}
             <div style={{ minHeight: 'calc(100vh - 240px' }} className="w-full flex flex-col items-center justify-around">
                 <Image  src={props.logo} alt="add2cart" width={140} height={140}  />
                 <div className="w-full text-center">
@@ -26,14 +25,10 @@ const Appsidebar = (props) => {
                 </div>
                 <div className="text-center">
                     <a href={props.website} target="_blank" rel='noreferrer'  ><button className="text-center p-1 w-[150px] mt-2 bg-orange-300 rounded block">Open</button></a>
-                    <a href={props.github} target="_blank" rel='noreferrer' ><button className="text-center p-1 w-[150px] mt-2 border border-orange-300 rounded">Github</button></a>
+                    <a href={props.github} target="_blank" rel='noreferrer' ><button className="text-center p-1 w-[150px] mt-2 border border-orange-300 rounded block">Github</button></a>
+                    <Link href="/" ><button className="text-center p-1 w-[150px] mt-2 border border-orange-300 rounded block">Back to Home</button></Link>
                 </div>
             </div>
-            {/* <div className="w-full px-2 fixed bottom-[36px]">
-                <div className="glass w-full py-2 rounded">
-                    <Share description={props.description} link={props.link} />
-                </div>
-            </div> */}
             <div className="w-full fixed flex justify-between items-center bottom-0 p-2 box-border">
                 <div className="flex items-center">
                     <Image  src="https://img.icons8.com/fluency/48/undefined/planner.png" width={20} height={20}  alt="time" />

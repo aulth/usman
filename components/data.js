@@ -64,6 +64,14 @@ export const projects = [
       website: 'https://email-spemmer.vercel.app/',
     },
     {
+      title: 'Kakafeeds',
+      description: 'Single Product Website',
+      image: '/projects/kakafeeds.png',
+      technology: { html: true, css: true, js: true, reactjs: true, nextjs:true, tailwind:true,  vercel: true, animxyz: true },
+      id: 'kakafeeds',
+      website: 'https://www.kakafeeds.com/',
+    },
+    {
       title: 'NewsShort',
       description: 'Summrize News from Inshort',
       image: '/projects/newsshort.png',

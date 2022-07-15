@@ -17,9 +17,9 @@ const About = () => {
                             <p>Campus Ambassador</p>
                         </div>
                         <div className='glass mx-1 p-1 rounded-md'>
-                            <h2 className="text-lg font-semibold">IIT Delhi</h2>
-                            <p>March 2021 to Dec 2021</p>
-                            <p>Campus Ambassador</p>
+                            <h2 className="text-lg font-semibold">Spark India</h2>
+                            <p>April 2022 to Present</p>
+                            <p>Front-End Web Developer - Intern</p>
                         </div>
                     </div>
                 </div>

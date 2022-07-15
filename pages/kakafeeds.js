@@ -12,7 +12,7 @@ const Kakafeeds = (props) => {
         logo:'/logo/kakafeeds.png',
         title: 'KakaFeeds',
         created:'29-06-2022',
-        updated:'07-07-2022'
+        updated:'11-07-2022'
     }
     const technology = { html: true, css: true, js: true,  reactjs: true, nextjs: true,  tailwind: true, vercel: true, animxyz:true }
     return (

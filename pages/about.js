@@ -16,7 +16,7 @@ const About = () => {
                             <p>March 2021 to Dec 2021</p>
                             <p>Campus Ambassador</p>
                         </div>
-                        <div className='glass mx-1 p-1 rounded-md'>
+                        <div className='glass mx-1 p-1 rounded-md md:mt-0 mt-2'>
                             <h2 className="text-lg font-semibold">Spark India</h2>
                             <p>April 2022 to Present</p>
                             <p>Front-End Web Developer - Intern</p>

@@ -27,7 +27,7 @@ const About = () => {
                     <h2 className="text-xl font-bold ml-2">Education</h2>
                     <div className="w-full flex flex-wrap">
                         <div className='glass m-1 p-1 rounded-md'>
-                            <h2 className="text-lg font-semibold">B.Tech (EE) 2nd Year</h2>
+                            <h2 className="text-lg font-semibold">B.Tech (EE) 3rd Year</h2>
                             <p>Jamia Millia Islamia New Delhi</p>
                             <p>2020 to 2024</p>
                         </div>

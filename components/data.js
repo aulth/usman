@@ -126,5 +126,37 @@ export const projects = [
       technology: { html: true, css: true, js: true, reactjs: true, vercel: true },
       id: 'weathermonkey',
       website: 'https://weather-monkey.vercel.app/',
-    }
+    },
+    {
+      title: 'iBank',
+      description: 'Banking System',
+      image: '/projects/ibank.png',
+      technology: { html: true, css: true, js: true, reactjs: true,  nodejs:true , vercel: true, tailwind:true, nextjs:true, mongodb:true},
+      id: 'ibank',
+      website: 'https://ibank.vercel.app/',
+    },
+    {
+      title: 'mySpace',
+      description: 'Find the perfect space',
+      image: '/projects/myspace.png',
+      technology: { html: true, css: true, js: true, reactjs: true,  nodejs:true , vercel: true, nextjs:true, tailwind:true, mongodb:true},
+      id: 'myspace',
+      website: 'https://myspacebook.vercel.app/',
+    },
+    {
+      title: 'Dobby',
+      description: 'Host your images online free.',
+      image: '/projects/dobby.png',
+      technology: { html: true, css: true, js: true, reactjs: true,  nodejs:true , vercel: true, nextjs:true, mongodb:true,tailwind:true, cloudinary:true},
+      id: 'dobby',
+      website: 'https://mohd-usman-dobby.vercel.app/',
+    },
+    {
+      title: 'ECON',
+      description: 'Online email concealer',
+      image: '/projects/econ.png',
+      technology: { html: true, css: true, js: true, reactjs: true,  nodejs:true , vercel: true, nextjs:true, tailwind:true},
+      id: 'econ',
+      website: 'https://e-con.vercel.app/',
+    },
   ]

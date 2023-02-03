@@ -1,94 +1,30 @@
 import React from 'react'
+import { GrReactjs } from 'react-icons/gr'
+import { FaNodeJs } from 'react-icons/fa'
+import { SiJavascript } from 'react-icons/si'
+import { AiOutlineEye } from 'react-icons/ai'
+import { BsCodeSlash } from 'react-icons/bs'
+import { VscDebugBreakpointFunction } from 'react-icons/vsc'
 import Skill from './Skill'
-
+// 73F8AB
 const Skills = () => {
-    const skills = [
-        {
-            technology: 'HTML',
-            percentage: 72,
-            image: '/technology/html.svg',
-            color:'rgb(246,99,0)'
-        },
-        {
-            technology: 'CSS',
-            percentage: 70,
-            image: '/technology/css.svg',
-            color:'rgb(3,155,229)'
-        },
-        {
-            technology: 'JavaScript',
-            percentage: 65,
-            image: '/technology/js.svg',
-            color:'rgb(255,214,0)'
-        },
-        {
-            technology: 'ReactJS',
-            percentage: 80,
-            image: '/technology/reactjs.svg',
-            color:'#61dafb'
-        },
-        {
-            technology: 'NodeJS',
-            percentage: 60,
-            image: '/technology/nodejs.svg',
-            color:'rgb(76,175,80)'
-        },
-        {
-            technology: 'ExpressJS',
-            percentage: 55,
-            image: '/technology/express.svg',
-            color:'#f9de3f'
-        },
-        {
-            technology: 'MongoDB',
-            percentage: 40,
-            image: '/technology/mongodb.svg',
-            color:'#589636'
-        },
-        {
-            technology: 'TailwindCSS',
-            percentage: 42,
-            image: '/technology/tailwind.svg',
-            color:'rgb(6,182,212)'
-        },
-        {
-            technology: 'GitHub',
-            percentage: 50,
-            image: '/technology/github.svg',
-            color:'rgb(0,0,0)'
-        },
-        {
-            technology: 'NextJS',
-            percentage: 75,
-            image: '/technology/nextjs.svg',
-            color:'#61dafb'
-        },
-        {
-            technology: 'Blogger',
-            percentage: 90,
-            image: '/technology/blogger.svg',
-            color:'rgb(255,111,0)'
-        },
-        {
-            technology:'C++',
-            percentage: 45,
-            image: '/technology/cpp.svg',
-            color:'rgb(0,134,212)'
-        }
-    ]
-    //srot skills
-    skills.sort((a, b) => {
-        return a.percentage - b.percentage
-    })
-    return (
-        <div className="skills w-full flex flex-wrap justify-around mt-[50px] md:px-2 px-1">
-            {
-                skills.map(skill=>{
-                    return <Skill key={skill.technology} color={skill.color} technology={skill.technology} percentage={skill.percentage} image={skill.image} />
-                })
-            }
-        </div>
-    )
+  return (
+    <div className="container md:px-12 px-2  flex flex-col">
+      <h2 className="font-semibold text-center text-2xl text-[#73F8AB] md:mb-4 my-4 ">Skills</h2>
+      <div className="w-full flex gap-2 flex-wrap justify-between p-4 mb-4">
+        <Skill title={"HTML"} percent={80} color={'#f06529'}/>
+        <Skill title={"CSS"} percent={70} color={'#264de4'}/>
+        <Skill title={"Javascript"} percent={60} color={'#f0db4f'}/>
+        <Skill title={"NodeJs"} percent={55} color={'#68a063'}/>
+        <Skill title={"ReactJs"} percent={80} color={'#61dbfb'}/>
+        <Skill title={"TailwindCSS"} percent={60} color={'#36B7F0'}/>
+        <Skill title={"C++"} percent={45} color={'#044F88'}/>
+        <Skill title={"Github"} percent={55} color={'#8F00FF'}/>
+        <Skill title={"NextJs"} percent={55} color={'#FF69B4'}/>
+        <Skill title={"Blogger"} percent={55} color={'#FC4F08'}/>
+      </div>
+    </div>
+  )
 }
 
 export default Skills

@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #2D2F33;
+    overflow-x:hidden;
+}
+
+@font-face{
+    font-family: 'Quantify';
+    src:url('/fonts/Quantify.ttf')
+}
+@font-face{
+    font-family: 'Jeko-Bold';
+    src:url('/fonts/jeko-bold.ttf')
+}
+@font-face{
+    font-family: 'Jeko-Medium';
+    src:url('/fonts/jeko-medium.ttf')
+}

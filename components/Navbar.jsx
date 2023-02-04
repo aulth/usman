@@ -45,7 +45,7 @@ const Navbar = () => {
                         <a href='mailto:mohdusman.you@gmail.com?subject=Inquiry&body=Hello%2C%0A%0A I have a question about... ' target="_blank"  className='flex items-center  cursor-pointer rounded-full border border-[#73F8AB] p-1 hover:bg-[#73F8AB] hover:text-white text-[#73F8AB]'><HiOutlineMail /></a>
                     </ul>
                 </div>
-                <div onClick={toggleMobileMenu} className="md:hidden flex items-center mr-4 p-1  rounded-full border  border-[#73F8AB] hover:text-[#2D2F33] hover:bg-[#73F8AB] text-[#73F8AB] duration-100 aspect-square cursor-pointer">
+                <div onClick={toggleMobileMenu} className="md:hidden flex items-center mr-2 p-1  rounded-full border  border-[#73F8AB] hover:text-[#2D2F33] hover:bg-[#73F8AB] text-[#73F8AB] duration-100 aspect-square cursor-pointer">
                     <MdOutlineMenuOpen className='' />
                 </div>
             </div>

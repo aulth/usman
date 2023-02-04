@@ -9,7 +9,7 @@ import Skill from './Skill'
 // 73F8AB
 const Skills = () => {
   return (
-    <div className="container md:px-12 px-2  flex flex-col">
+    <div id='skills' className="container md:px-12 px-2 m-auto flex flex-col scroll-m-16">
       <h2 className="font-semibold text-center text-2xl text-[#73F8AB] md:mb-4 my-4 ">Skills</h2>
       <div className="w-full flex gap-2 flex-wrap justify-between p-4 mb-4">
         <Skill title={"HTML"} percent={80} color={'#f06529'}/>

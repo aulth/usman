@@ -3,7 +3,7 @@ import { VscDebugBreakpointFunction } from 'react-icons/vsc'
 
 const Skill = ({title, percent, color}) => {
     return (
-        <div className='w-[48%] text-white'>
+        <div className='w-[48%] text-white my-4'>
             <p>{title}</p>
             <div className="w-full h-2 bg-gray-200">
                 <div style={{width:`${percent}%`, background:color}} className={`h-2 relative`}>

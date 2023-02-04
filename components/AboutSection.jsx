@@ -6,8 +6,8 @@ import { AiOutlineEye } from 'react-icons/ai'
 import { BsCodeSlash } from 'react-icons/bs'
 const AboutSection = () => {
   return (
-    <div className="container md:p-12 px-2   flex flex-col-reverse md:flex-row justify-center md:min-h-[calc(100vh-60px)]">
-      <div className="w-full md:w-1/2 md:mt-0 mt-16 md:min-h-[calc(100vh-60px)] flex flex-col gap-4 items-start justify-start p-4 relative ">
+    <div className="container md:p-12 md:pb-0 px-2 m-auto  flex flex-col-reverse md:flex-row justify-center">
+      <div className="w-full md:w-1/2 md:mt-0 mt-16 flex flex-col gap-4 items-start justify-start p-4 relative ">
         <div className="w-full rounded shadow-2xl px-4 py-2">
           <div className="w-full flex justify-between items-center text-[#73F8AB]">
             <h2 className="text-2xl font-mono ">

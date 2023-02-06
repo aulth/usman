@@ -18,7 +18,7 @@ const AboutSection = () => {
             <AiOutlineEye className='text-xl' />
           </div>
           <p className='text-gray-300'>I am a front-end web developer proficient in creating dynamic, responsive websites and web applications with HTML, CSS, and JavaScript.</p>
-          <button onClick={()=>{filterProjects('Frontend')}} className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>9 Projects</button>
+          <button onClick={()=>{filterProjects('Frontend')}} className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>10 Projects</button>
         </div>
         <div className="w-full rounded shadow-2xl px-4 py-2">
           <div className="w-full flex justify-between items-center text-[#73F8AB]">

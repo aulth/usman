@@ -32,7 +32,7 @@ const AllProjects = () => {
                 </div>
                 <div className="w-full relative border border-gray-300 rounded h-20 my-4  flex items-start  project FullStack Backend ">
                     <div className="w-[4.3rem] flex items-center justify-center h-5 bg-[#f0db4f] text-white absolute -top-3 -right-[calc(0.5rem+0.5px)]">
-                        <span className='text-sm'>Freelance</span>
+                        <span className='text-sm text-gray-800'>Freelance</span>
                         <div className="absolute w-2 border-r-transparent border-b-transparent border-r-8 border-t-8  border-t-[#b6a53b]  right-0 -bottom-2">
                         </div>
                     </div>
@@ -140,7 +140,7 @@ const AllProjects = () => {
                 </div>
                 <div className="w-full relative border border-gray-300 rounded h-20 my-4  flex items-start  project FullStack Backend ">
                     <div className="w-[4.3rem] flex items-center justify-center h-5 bg-[#F1C40F] text-white absolute -top-3 -right-[calc(0.5rem+0.5px)]">
-                        <span className='text-sm'>Internship</span>
+                        <span className='text-sm text-gray-800'>Internship</span>
                         <div className="absolute w-2 border-r-transparent border-b-transparent border-r-8 border-t-8  border-t-[#cba50d]  right-0 -bottom-2">
                         </div>
                     </div>
@@ -247,6 +247,22 @@ const AllProjects = () => {
                         <p> website.</p>
                         <div className="p-2 flex justify-end items-center absolute bottom-0 right-0">
                             <a href="https://github.com/aulth/panda" target="_blank" className='relative'><AiFillGithub className='md:text-2xl z-10  text-gray-300  hover:text-[#73F8AB] text-xl' /></a>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full relative border border-gray-300 rounded h-20 my-4  flex items-start  project Frontend ">
+                    <div className="w-28 flex items-center justify-center h-5 bg-[#f0db4f] text-white absolute -top-3 -right-[calc(0.5rem+0.5px)]">
+                        <span className='text-sm text-gray-800'>Personal Project</span>
+                        <div className="absolute w-2 border-r-transparent border-b-transparent border-r-8 border-t-8  border-t-[#b6a53b]  right-0 -bottom-2">
+                        </div>
+                    </div>
+                    <img src="/images/projects/screenshot/portfolio.jpg" className='h-[calc(5rem-2px)] rounded-l' alt="Add2cart" />
+                    <div className="w-full flex flex-col items-start justify-start p-1 px-2 h-[calc(5rem-2px)] relative">
+                        <a href='https://mohd-usman.vercel.app/' target="_blank" className="font-semibold text-[#73F8AB] hover:underline ">Portfolio</a>
+                        <p>My online </p>
+                        <p> portfolio.</p>
+                        <div className="p-2 flex justify-end items-center absolute bottom-0 right-0">
+                            <a href="https://github.com/aulth/usman" target="_blank" className='relative'><AiFillGithub className='md:text-2xl z-10  text-gray-300  hover:text-[#73F8AB] text-xl' /></a>
                         </div>
                     </div>
                 </div>

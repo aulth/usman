@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react'
-import AppContext from 'Appcontext'
+import AppContext from 'AppContext'
 import { AiFillGithub, AiFillLock } from 'react-icons/ai'
 import { MdOutlineClose } from 'react-icons/md'
 const AllProjects = () => {

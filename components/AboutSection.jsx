@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import AppContext from 'Appcontext'
+import AppContext from 'AppContext'
 import { GrReactjs } from 'react-icons/gr'
 import { FaNodeJs } from 'react-icons/fa'
 import { SiJavascript } from 'react-icons/si'

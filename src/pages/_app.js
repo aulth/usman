@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import AppContext from 'Appcontext'
+import AppContext from 'AppContext'
 import { useState } from 'react';
 export default function App({ Component, pageProps }) {
   const [projectsTitle, setProjectsTitle] = useState('All Projects');

@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import AppContext from 'Appcontext'
 import { GrReactjs } from 'react-icons/gr'
 import { FaNodeJs } from 'react-icons/fa'
 import { SiJavascript } from 'react-icons/si'
 import { AiOutlineEye } from 'react-icons/ai'
 import { BsCodeSlash } from 'react-icons/bs'
 const AboutSection = () => {
+  const {filterProjects} = useContext(AppContext);
   return (
     <div className="container md:p-12 md:pb-0 px-2 m-auto  flex flex-col-reverse md:flex-row justify-center">
       <div className="w-full md:w-1/2 md:mt-0 mt-16 flex flex-col gap-4 items-start justify-start p-4 relative ">
@@ -16,7 +18,7 @@ const AboutSection = () => {
             <AiOutlineEye className='text-xl' />
           </div>
           <p className='text-gray-300'>I am a front-end web developer proficient in creating dynamic, responsive websites and web applications with HTML, CSS, and JavaScript.</p>
-          <p className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-default'>10 Projects</p>
+          <button onClick={()=>{filterProjects('Frontend')}} className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>9 Projects</button>
         </div>
         <div className="w-full rounded shadow-2xl px-4 py-2">
           <div className="w-full flex justify-between items-center text-[#73F8AB]">
@@ -26,7 +28,7 @@ const AboutSection = () => {
             <BsCodeSlash className='text-xl' />
           </div>
           <p className='text-gray-300'>Experienced in server-side programming and databases, I aim to develop efficient and scalable backend solutions.</p>
-          <p className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-default'>10 Projects</p>
+          <button  onClick={()=>{filterProjects('Backend')}}  className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>10 Projects</button>
         </div>
         <div className="w-full rounded  shadow-2xl px-4 py-2">
           <div className="w-full flex justify-between items-center text-[#73F8AB]">
@@ -36,7 +38,7 @@ const AboutSection = () => {
             <BsCodeSlash className='text-xl' />
           </div>
           <p className='text-gray-300'>As a full-stack web developer, I design and build dynamic websites and web applications from front-end to back-end</p>
-          <p className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-default'>10 Projects</p>
+          <button  onClick={()=>{filterProjects('FullStack')}}  className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>10 Projects</button>
         </div>
       </div>
       <div className="w-full md:w-1/2 md:minh-[calc(100vh-60px)] p-4 flex flex-col justify-start">

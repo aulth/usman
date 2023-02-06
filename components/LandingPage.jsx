@@ -24,7 +24,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="py-1 ml-8 flex items-center">
-              <div className='text-[3.125rem] text-white'>21</div>
+              <div className='text-[3.125rem] text-white'>20</div>
               <div className="flex flex-col items-start justify-center mt-1 ml-1 text-gray-300">
                 <p className=''>Projects</p>
                 <p className=''>Completed</p>

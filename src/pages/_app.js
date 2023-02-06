@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }) {
   }
   const openDrawer = () => {
     if (typeof window !== 'undefined') {
+      setProjectsTitle("All Projects");
       document.querySelectorAll('.project').forEach((item=>{item.classList.remove('hidden');item.classList.add('flex')}))
       document.querySelector("#all-projects").classList.remove('-left-full');
       document.querySelector("#all-projects").classList.add('left-0');

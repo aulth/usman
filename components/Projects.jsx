@@ -2,7 +2,7 @@ import React from 'react'
 import { GrReactjs } from 'react-icons/gr'
 import { FaNodeJs } from 'react-icons/fa'
 import { SiJavascript } from 'react-icons/si'
-import { AiFillGithub } from 'react-icons/ai'
+import { AiFillGithub, AiFillLock } from 'react-icons/ai'
 import { BsCodeSlash } from 'react-icons/bs'
 import { VscDebugBreakpointFunction } from 'react-icons/vsc'
 import { GiEarthAfricaEurope } from 'react-icons/gi'
@@ -20,9 +20,12 @@ const Projects = () => {
             </div>
           </div>
           <img src="/images/projects/add2cart.webp" className='w-1/2' alt="" />
-          <a href='#' className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
+          <a href='https://add2cart.vercel.app/' target="_blank" className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
             Online E-commerce Platform
           </a>
+          <div className="w-full px-4 flex justify-end items-center absolute bottom-4">
+            <a href="https://github.com/aulth/add2cart" target="_blank"><AiFillGithub className='md:text-2xl z-10  hover:text-[#73F8AB] text-gray-300 text-xl' /></a>
+          </div>
         </div>
         <div className="md:w-[23%] w-[47%] h-40 shadow-[0_10px_60px_1px_rgba(0,0,0,0.3)]  flex flex-col justify-center items-center relative">
           <div className="w-[4.3rem] flex items-center justify-center h-5 bg-[#f0db4f] absolute -top-2 md:-left-2 -right-2 text-gray-800">
@@ -31,12 +34,11 @@ const Projects = () => {
             </div>
           </div>
           <img src="/images/projects/ibank.png" className='w-1/3' alt="" />
-          <a href='#' className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
+          <a href='http://ibank.vercel.app/' target="_blank" className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
             Banking System
           </a>
-          <div className="w-full px-4 flex justify-between items-center absolute bottom-4">
-            <a href="#"><AiFillGithub className='md:text-2xl text-[#73F8AB] hover:text-gray-300 text-xl' /></a>
-            <a href="#"><GiEarthAfricaEurope className='md:text-2xl text-[#73F8AB]  hover:text-gray-300 text-xl' /></a>
+          <div className="w-full px-4 flex justify-end items-center absolute bottom-4">
+            <a href="https://github.com/aulth/ibank" target="_blank"><AiFillGithub className='md:text-2xl z-10  hover:text-[#73F8AB] text-gray-300 text-xl' /></a>
           </div>
         </div>
         <div className="md:w-[23%] w-[47%] h-40 shadow-[0_10px_60px_1px_rgba(0,0,0,0.3)]  flex flex-col justify-center items-center relative">
@@ -46,9 +48,12 @@ const Projects = () => {
             </div>
           </div>
           <img src="/images/projects/kakafeeds.webp" className='w-1/3' alt="" />
-          <a href='#' className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
+          <a href='http://kaka.vercel.app/' target="_blank" className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
             Single Product Website
           </a>
+          <div className="w-full px-4 flex justify-end items-center absolute bottom-4">
+            <a href="https://github.com/aulth/kaka" target="_blank" className='relative'><AiFillGithub className='md:text-2xl z-10  hover:text-[#73F8AB] text-gray-300 text-xl' /><AiFillLock className='absolute -bottom-1 -right-1 text-sm bg-gray-300 rounded-full p-[0.1rem] border border-[#73F8AB] hover:bg-[#73F8AB]'/></a>
+          </div>
         </div>
         <div className="md:w-[23%] w-[47%] h-40  shadow-[0_10px_60px_1px_rgba(0,0,0,0.3)]  flex flex-col justify-center items-center relative">
           <div className="w-28 flex items-center justify-center h-5 bg-[#FF69B4] text-white absolute -top-2 md:-left-2 -right-2">
@@ -57,9 +62,12 @@ const Projects = () => {
             </div>
           </div>
           <img src="/images/projects/myspace.webp" className='w-1/2' alt="" />
-          <a href='#' className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
+          <a href='https://myspacebook.vercel.app/' target="_blank" className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
             Flat Finder
           </a>
+          <div className="w-full px-4 flex justify-end items-center absolute bottom-4">
+            <a href="https://github.com/aulth/myspace" target="_blank"><AiFillGithub className='md:text-2xl z-10  hover:text-[#73F8AB] text-gray-300 text-xl' /></a>
+          </div>
         </div>
         <div className="md:w-[23%] w-[47%] h-40 shadow-[0_10px_60px_1px_rgba(0,0,0,0.3)]  flex flex-col justify-center items-center relative">
           <div className="w-[4.3rem] flex items-center justify-center h-5 bg-[#7E57C2] text-white absolute -top-2 -left-2">
@@ -68,9 +76,12 @@ const Projects = () => {
             </div>
           </div>
           <img src="/images/projects/dobby.webp" className='w-1/3' alt="" />
-          <h2 className="text-gray-300 mt-2 hover:text-[#73F8AB] hover:underline px-2 text-center">
+          <a href="http://mohd-usman-dobby.vercel.app/" target="_blank" className="text-gray-300 mt-2 hover:text-[#73F8AB] hover:underline px-2 text-center">
             Online Personal Storage
-          </h2>
+          </a>
+          <div className="w-full px-4 flex justify-end items-center absolute bottom-4">
+            <a href="https://github.com/aulth/mohd-usman-dobby" target="_blank"><AiFillGithub className='md:text-2xl z-10  hover:text-[#73F8AB] text-gray-300 text-xl' /></a>
+          </div>
         </div>
         <div className="md:w-[23%] w-[47%] h-40  shadow-[0_10px_60px_1px_rgba(0,0,0,0.3)]  flex flex-col justify-center items-center relative">
           <div className="w-28 flex items-center justify-center h-5 bg-[#5D4037] text-white absolute -top-2 md:-left-2 -right-2">
@@ -79,9 +90,12 @@ const Projects = () => {
             </div>
           </div>
           <img src="/images/projects/econ.webp" className='w-1/3' alt="" />
-          <a href='#' className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
+          <a href='http://e-con.vercel.app/' target="_blank" className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
             Email Concealer
           </a>
+          <div className="w-full px-4 flex justify-end items-center absolute bottom-4">
+            <a href="https://github.com/aulth/econ" target="_blank"><AiFillGithub className='md:text-2xl z-10  hover:text-[#73F8AB] text-gray-300 text-xl' /></a>
+          </div>
         </div>
         <div className="md:w-[23%] w-[47%] h-40 shadow-[0_10px_60px_1px_rgba(0,0,0,0.3)]  flex flex-col justify-center items-center relative">
           <div className="w-28 flex items-center justify-center h-5 bg-[#3949AB] text-white absolute -top-2 -left-2">
@@ -90,9 +104,12 @@ const Projects = () => {
             </div>
           </div>
           <img src="/images/projects/textmonkey.webp" className='w-1/3' alt="" />
-          <a href='#' className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
+          <a href='https://aulth.github.io/textmonkey/' target="_blank" className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
             Text Monkey
           </a>
+          <div className="w-full px-4 flex justify-end items-center absolute bottom-4">
+            <a href="https://github.com/aulth/textmonkey" target="_blank"><AiFillGithub className='md:text-2xl z-10  hover:text-[#73F8AB] text-gray-300 text-xl' /></a>
+          </div>
         </div>
         <div className="md:w-[23%] w-[47%] h-40  shadow-[0_10px_60px_1px_rgba(0,0,0,0.3)] flex flex-col justify-center items-center relative">
           <div className="w-[4.3rem] flex items-center justify-center h-5 bg-[#3D9970] text-white absolute -top-2 md:-left-2 -right-2">
@@ -101,13 +118,16 @@ const Projects = () => {
             </div>
           </div>
           <img src="/images/projects/alatwal.png" className='w-1/3' alt="" />
-          <a href='#' className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
+          <a href='https://www.alatwal.com/' target="_blank" className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
             Alatwal - Tourism
           </a>
+          <div className="w-full px-4 flex justify-end items-center absolute bottom-4">
+            <a href="https://github.com/aulth/tourism" target="_blank" className='relative'><AiFillGithub className='md:text-2xl z-10  hover:text-[#73F8AB] text-gray-300 text-xl' /><AiFillLock className='absolute -bottom-1 -right-1 text-sm bg-gray-300 rounded-full p-[0.1rem] border border-[#73F8AB] hover:bg-[#73F8AB]'/></a>
+          </div>
         </div>
       </div>
       <div className="w-full flex justify-end px-8">
-      <a href="#" className="text-right w-20 text-[#73F8AB] hover:underline">All..</a>
+        <a href="#" className="text-right w-20 text-[#73F8AB] hover:underline">All..</a>
       </div>
     </div>
   )

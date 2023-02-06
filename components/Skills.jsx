@@ -21,7 +21,7 @@ const Skills = () => {
         <Skill title={"C++"} percent={45} color={'#044F88'}/>
         <Skill title={"Github"} percent={55} color={'#8F00FF'}/>
         <Skill title={"NextJs"} percent={55} color={'#FF69B4'}/>
-        <Skill title={"Blogger"} percent={55} color={'#FC4F08'}/>
+        <Skill title={"Blogger"} percent={90} color={'#FC4F08'}/>
       </div>
     </div>
   )

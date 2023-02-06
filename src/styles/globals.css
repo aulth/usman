@@ -10,6 +10,20 @@ body{
     background-color: #2D2F33;
     overflow-x:hidden;
 }
+body::-webkit-scrollbar{
+  width: 4px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #73F8AB;
+  outline: none;
+}
+.all-projects::-webkit-scrollbar{
+  width: 4px;
+}
+.all-projects::-webkit-scrollbar-thumb {
+  background-color: #73F8AB;
+  outline: none;
+}
 
 @font-face{
     font-family: 'Quantify';

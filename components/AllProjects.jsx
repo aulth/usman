@@ -1,21 +1,21 @@
-import React, {useState, useContext} from 'react'
+import React, { useState, useContext } from 'react'
 import AppContext from 'AppContext'
 import { AiFillGithub, AiFillLock } from 'react-icons/ai'
 import { MdOutlineClose } from 'react-icons/md'
 const AllProjects = () => {
-    const {projectsTitle, closeDrawer} = useContext(AppContext)
+    const { projectsTitle, closeDrawer } = useContext(AppContext)
     return (
-        <div onMouseLeave={closeDrawer} id='all-projects' className="fixed bottom-0 -left-full duration-100 ease-in-out h-[calc(100vh-60px)] box-border bg-[#2D2F33] text-gray-300 shadow-2xl w-[24rem]  z-10 overflow-x-auto">
-            <div className="w-full  border-[#73F8AB] h-[calc(100vh-60px)] box-border p-2 px-4  ">
-                <div className="w-full flex justify-between items-center bg-[#2D2F33] z-50">
-                    <h2 className="font-semibold">
-                        {projectsTitle}
-                    </h2>
-                    <button onClick={closeDrawer} className='text-green-400 hover:text-gray-300'>
-                        <MdOutlineClose />
-                    </button>
-                </div>
-                <div className="w-full border border-gray-300 rounded h-20 my-4 flex items-start relative project FullStack Backend ">
+        <div onMouseLeave={closeDrawer} id='all-projects' className="fixed top-[60px] -left-full duration-100 ease-in-out h-[calc(100vh-60px)] box-border bg-[#2D2F33] text-gray-300 shadow-2xl md:w-[24rem] w-full z-10 ">
+            <div className="w-full flex justify-between items-center bg-[#2D2F33] z-50 px-4 py-2">
+                <h2 className="font-semibold">
+                    {projectsTitle}
+                </h2>
+                <button onClick={closeDrawer} className='text-green-400 hover:text-gray-300'>
+                    <MdOutlineClose />
+                </button>
+            </div>
+            <div className="w-full all-projects border-[#73F8AB] h-[calc(100vh-60px)] box-border py-2 px-4  overflow-y-auto">
+                <div className="w-full border border-gray-300 rounded h-20 my-4 mt-2 flex items-start relative project FullStack Backend ">
                     <div className="w-28 flex items-center justify-center h-5 bg-[#f06529] text-white absolute -top-3 -right-[calc(0.5rem+0.5px)]">
                         <span className='text-sm'>Personal Project</span>
                         <div className="absolute w-2 border-r-transparent border-b-transparent border-r-8 border-t-8  border-t-[#c15020] right-0 -bottom-2">
@@ -24,7 +24,8 @@ const AllProjects = () => {
                     <img src="/images/projects/screenshot/add2cart.png" className='h-[calc(5rem-2px)] rounded-l' alt="Add2cart" />
                     <div className="w-full flex flex-col items-start justify-start p-1 px-2 relative">
                         <a href='https://add2cart.vercel.app/' target="_blank" className="font-semibold text-[#73F8AB] hover:underline ">Add2Cart</a>
-                        <p>Online ecommerce platform</p>
+                        <p>Online ecommerce </p>
+                        <p>platform</p>
                         <div className="p-2 flex justify-end items-center absolute bottom-0 right-0">
                             <a href="https://github.com/aulth/add2cart" target="_blank" className='relative'><AiFillGithub className='md:text-2xl z-10  text-gray-300  hover:text-[#73F8AB] text-xl' /></a>
                         </div>
@@ -39,7 +40,7 @@ const AllProjects = () => {
                     <img src="/images/projects/screenshot/alatwal.jpg" className='h-[calc(5rem-2px)] rounded-l' alt="Add2cart" />
                     <div className="w-full flex flex-col items-start justify-start p-1 px-2 relative">
                         <a href='https://www.alatwal.com/' target="_blank" className="font-semibold text-[#73F8AB] hover:underline ">AlAtwal</a>
-                        <p>Visa and Tour Ticket Booking Platform</p>
+                        <p>Visa and Tour Ticket Booking</p>
                         <div className="p-2 flex justify-end items-center absolute bottom-1 right-0">
                             <a href="https://github.com/aulth/tourism" target="_blank" className='relative'><AiFillGithub className='md:text-2xl z-10  hover:text-[#73F8AB] text-gray-300 text-xl' /><AiFillLock className='absolute -bottom-1 -right-1 text-sm bg-gray-300 text-[#2D2F33] rounded-full p-[0.1rem] border border-[#73F8AB] hover:bg-[#73F8AB]' /></a>
                         </div>
@@ -54,7 +55,8 @@ const AllProjects = () => {
                     <img src="/images/projects/screenshot/atm.png" className='h-[calc(5rem-2px)] rounded-l' alt="Add2cart" />
                     <div className="w-full flex flex-col items-start justify-start p-1 px-2 h-[calc(5rem-2px)] relative">
                         <a href='https://aulth.github.io/atm/' target="_blank" className="font-semibold text-[#73F8AB] hover:underline ">ATM Simulator</a>
-                        <p>Online Automated Teller Machine game</p>
+                        <p>Online ATM </p>
+                        <p>game</p>
                         <div className="p-2 flex justify-end items-center absolute bottom-0 right-0">
                             <a href="https://github.com/aulth/atm" target="_blank" className='relative'><AiFillGithub className='md:text-2xl z-10  text-gray-300  hover:text-[#73F8AB] text-xl' /></a>
                         </div>
@@ -85,7 +87,8 @@ const AllProjects = () => {
                     <img src="/images/projects/screenshot/bijlivibhag.jpg" className='h-[calc(5rem-2px)] rounded-l' alt="Add2cart" />
                     <div className="w-full flex flex-col items-start justify-start p-1 px-2 h-[calc(5rem-2px)] relative">
                         <a href='https://aulth.github.io/bijlivibhag/' target="_blank" className="font-semibold text-[#73F8AB] hover:underline ">Bijli Vibhag</a>
-                        <p>Study material platform for JMI EE students</p>
+                        <p>JMI EE 3rd Sem </p>
+                        <p>student material</p>
                         <div className="p-2 flex justify-end items-center absolute bottom-0 right-0">
                             <a href="https://github.com/aulth/bijlivibhag" target="_blank" className='relative'><AiFillGithub className='md:text-2xl z-10  text-gray-300  hover:text-[#73F8AB] text-xl' /></a>
                         </div>
@@ -329,7 +332,7 @@ const AllProjects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="h-2"></div>
+                <div className="h-8"></div>
             </div>
         </div>
     )

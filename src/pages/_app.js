@@ -4,10 +4,10 @@ import { useState } from 'react';
 export default function App({ Component, pageProps }) {
   const [projectsTitle, setProjectsTitle] = useState('All Projects');
   const filterProjects = (category) => {
+    openDrawer();
     document.querySelectorAll('.project').forEach(item => { item.classList.remove('flex'); item.classList.add('hidden') });
     document.querySelectorAll(`.${category}`).forEach(item => { item.classList.remove('hidden'); item.classList.add('flex') });
     setProjectsTitle(category+" Projects");
-    openDrawer();
   }
   const openDrawer = () => {
     if (typeof window !== 'undefined') {

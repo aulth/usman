@@ -40,6 +40,9 @@ const LandingPage = () => {
             <div className="md:w-16 w-12 md:h-16 h-12 flex justify-center items-center rounded-full bg-[#29282D] absolute top-3/4 drop-shadow-lg">
               <GrReactjs className='md:text-4xl text-3xl text-[#61dbfb]' />
             </div>
+            <div className="md:w-16 w-12 md:h-16 h-12 flex justify-center items-center rounded-full bg-[#29282D] absolute top-[90%] left-1/2 drop-shadow-lg">
+              <img src="/images/cpp.svg" className='w-[2.225rem] md:w-[3rem]' alt="" />
+            </div>
             <div className="md:w-20 w-14 md:h-20 h-14 flex justify-center items-center rounded-full bg-[#29282D] absolute top-3/4 left-3/4 drop-shadow-lg">
               <FaNodeJs className='md:text-5xl text-4xl text-[#73F8AB]' />
             </div>

@@ -129,6 +129,20 @@ const Projects = () => {
               <a href="https://github.com/aulth/tourism" target="_blank" className='relative'><AiFillGithub className='md:text-2xl z-10  hover:text-[#73F8AB] text-gray-300 text-xl' /><AiFillLock className='absolute -bottom-1 -right-1 text-sm bg-gray-300 rounded-full p-[0.1rem] border border-[#73F8AB] hover:bg-[#73F8AB]' /></a>
             </div>
           </div>
+          <div className="md:w-[23%] w-[47%] h-40 shadow-[0_10px_60px_1px_rgba(0,0,0,0.3)]  flex flex-col justify-center items-center relative">
+            <div className="w-[5.7rem] flex items-center justify-center h-5 bg-[#8F00FF] text-white absolute -top-2 -left-2">
+              <span className='text-sm'>College Event</span>
+              <div className="absolute w-2 border-l-8 border-l-transparent border-t- border-t-8 border-t-[rgb(141,16,236)] left-0 -bottom-2">
+              </div>
+            </div>
+            <img src="/images/projects/jmimun.png" className='w-1/3' alt="" />
+            <a href='https://jmimun.org' target="_blank" className="text-gray-300 hover:text-[#73F8AB] hover:underline mt-2 px-2 text-center">
+              JMI - MUN
+            </a>
+            <div className="px-4 flex justify-end items-center absolute bottom-4 right-0">
+              <a href="https://github.com/aulth/mun" target="_blank"><AiFillGithub className='md:text-2xl z-10  hover:text-[#73F8AB] text-gray-300 text-xl' /></a>
+            </div>
+          </div>
         </div>
         <div className="w-full flex justify-end px-8">
           <button onClick={openDrawer} className="text-right w-20 text-[#73F8AB] hover:underline">Show All..</button>

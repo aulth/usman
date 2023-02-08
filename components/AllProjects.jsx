@@ -189,6 +189,22 @@ const AllProjects = () => {
                         </div>
                     </div>
                 </div>
+                <div className="w-full relative border border-gray-300 rounded h-20 my-4  flex items-start  project Frontend  ">
+                    <div className="w-[5.6rem] flex items-center justify-center h-5 bg-[#8F00FF] text-white absolute -top-3 -right-[calc(0.5rem+0.5px)]">
+                        <span className='text-sm'>College Event</span>
+                        <div className="absolute w-2 border-r-transparent border-b-transparent border-r-8 border-t-8  border-t-[rgb(141,16,236)] right-0 -bottom-2">
+                        </div>
+                    </div>
+                    <img src="/images/projects/screenshot/jmimun.png" className='h-[calc(5rem-2px)] rounded-l' alt="JMI-MUN" />
+                    <div className="w-full flex flex-col items-start justify-start p-1 px-2 h-[calc(5rem-2px)] relative">
+                        <a href='https://jmimun.org' target="_blank" className="font-semibold text-[#73F8AB] hover:underline ">JMI - MUN</a>
+                        <p>Model United</p>
+                        <p>Nations.</p>
+                        <div className="p-2 flex justify-end items-center absolute bottom-0 right-0">
+                            <a href="https://github.com/aulth/mun" target="_blank" className='relative'><AiFillGithub className='md:text-2xl z-10  text-gray-300 hover:text-[#73F8AB] text-xl' /></a>
+                        </div>
+                    </div>
+                </div>
                 <div className="w-full relative border border-gray-300 rounded h-20 my-4  flex items-start  project Frontend">
                     <div className="w-[4.3rem] flex items-center justify-center h-5 bg-[#2ECC71] text-white absolute -top-3 -right-[calc(0.5rem+0.5px)]">
                         <span className='text-sm'>Freelance</span>

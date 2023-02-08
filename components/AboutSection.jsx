@@ -3,7 +3,7 @@ import AppContext from 'AppContext'
 import { GrReactjs } from 'react-icons/gr'
 import { FaNodeJs } from 'react-icons/fa'
 import { SiJavascript } from 'react-icons/si'
-import { AiOutlineEye } from 'react-icons/ai'
+import { AiOutlineEye, AiOutlineFire } from 'react-icons/ai'
 import { BsCodeSlash } from 'react-icons/bs'
 const AboutSection = () => {
   const {filterProjects} = useContext(AppContext);
@@ -18,7 +18,7 @@ const AboutSection = () => {
             <AiOutlineEye className='text-xl' />
           </div>
           <p className='text-gray-300'>I am a front-end web developer proficient in creating dynamic, responsive websites and web applications with HTML, CSS, and JavaScript.</p>
-          <button onClick={()=>{filterProjects('Frontend')}} className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>10 Projects</button>
+          <button onClick={()=>{filterProjects('Frontend')}} className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>11 Projects</button>
         </div>
         <div className="w-full rounded shadow-2xl px-4 py-2">
           <div className="w-full flex justify-between items-center text-[#73F8AB]">
@@ -35,7 +35,7 @@ const AboutSection = () => {
             <h2 className="text-2xl font-mono ">
               Full Stack Developer
             </h2>
-            <BsCodeSlash className='text-xl' />
+            <AiOutlineFire className='text-xl' />
           </div>
           <p className='text-gray-300'>As a full-stack web developer, I design and build dynamic websites and web applications from front-end to back-end</p>
           <button  onClick={()=>{filterProjects('FullStack')}}  className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>10 Projects</button>

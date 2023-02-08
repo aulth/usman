@@ -15,7 +15,7 @@ const sendContactForm = async (req, res) => {
     const mailOption = {
         from: `${data.name} <mohdusman.developer@gmail.com>`,
         to: 'mohdusman.you@gmail.com',
-        subject: "Inquiry From Portoflio",
+        subject:`Portfolio enquiry from ${data.email}`,
         text: data.message
     };
     transporter.sendMail(mailOption, (err, info) => {

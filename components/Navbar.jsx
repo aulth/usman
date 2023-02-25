@@ -18,7 +18,6 @@ const Navbar = () => {
         }
     }
     useEffect(() => {
-        console.log(menuClicked)
         document.querySelectorAll('.menu-item').forEach((item) => item.classList.remove('text-[#73F8AB]'))
         if(menuClicked!==null){
             document.querySelector(`#${menuClicked}`).classList.add('text-[#73F8AB]')

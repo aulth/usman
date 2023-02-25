@@ -18,7 +18,6 @@ const Navbar = () => {
         }
     }
     useEffect(() => {
-        console.log(menuClicked)
         document.querySelectorAll('.menu-item').forEach((item) => item.classList.remove('text-[#73F8AB]'))
         document.body.style.backgroundColor = "#F8FAFC";
         if(menuClicked!==null){
@@ -29,7 +28,7 @@ const Navbar = () => {
     return (
         <div className='w-screen md:px-4 sticky top-0 bg-white z-20'>
             <div className="container m-auto flex justify-between items-center md:px-12 p-4 text-gray-800 text-sm">
-                <Link href={"/"} className="flex items-center font-[Jeko-Bold] ">
+                <Link  href="/" className="flex items-center font-[Jeko-Bold] ">
                     <span className="text-lg font-semibold">Mohd</span>
                     <span className="text-lg font-[Jeko-Medium] ml-1">Usman</span>
                 </Link>

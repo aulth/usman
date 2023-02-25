@@ -3,13 +3,14 @@ import Navbar from 'components/blog/Navbar'
 import Recent from 'components/blog/home/Recent'
 import Home from 'components/blog/home/Home'
 import Footer from 'components/blog/Footer'
+import data from './data'
 const Blog = () => {
 
   return (
     <>
     <Navbar/>
-    <Recent/>
-    <Home/>
+    <Recent data={data}/>
+    <Home data={data}/>
     <Footer/>
     </>
   )

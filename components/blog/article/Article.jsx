@@ -1,26 +1,26 @@
 import React from 'react'
-import Popular from './Popular'
-import Story from './Story'
-import Subscribe from './Subscribe'
-import Thoughts from './Thoughts'
-import Tips from './Tips'
-const Home = ({data}) => {
+import Body from './Body'
+import Popular from '../home/Popular'
+import Subscribe from '../home/Subscribe'
+import YouMightLike from './YouMightLike'
+import Comment from './Comment'
+const Article = ({data}) => {
     return (
         <div className="container m-auto flex gap-4 flex-col xl:flex-row xl:px-16 px-4 py-4">
             <div className="w-full flex flex-col gap-4 xl:w-[60%]">
                 <div className="w-full rounded-lg bg-white ">
-                    <Story data={data} />
+                    <Body data={data} />
                 </div>
                 <div className="w-full rounded-lg bg-white ">
-                    <Thoughts data={data} />
+                    <YouMightLike/>
                 </div>
                 <div className="w-full rounded-lg bg-white ">
-                    <Tips  data={data} />
+                    <Comment/>
                 </div>
             </div>
             <div className="w-full flex flex-col gap-4 xl:w-[40%]">
                 <div className="w-full rounded-lg bg-white">
-                    <Popular  data={data} />
+                    <Popular />
                 </div>
                 <div className="w-full rounded-lg bg-white">
                     <Subscribe />
@@ -30,4 +30,4 @@ const Home = ({data}) => {
     )
 }
 
-export default Home
+export default Article

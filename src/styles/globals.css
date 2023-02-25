@@ -7,7 +7,6 @@ scroll-behavior:smooth;
 }
 
 body{
-    background-color: #2D2F33;
     overflow-x:hidden;
 }
 body::-webkit-scrollbar{

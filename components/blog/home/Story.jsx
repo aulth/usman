@@ -3,7 +3,6 @@ import { IoIosArrowRoundForward } from 'react-icons/io'
 import Link from 'next/link';
 const Story = ({ data }) => {
     const [story, setStory] = useState();
-    console.log(data)
     useEffect(() => {
         setStory(data.filter(item => item.category == 'story'));
     }, [])
@@ -28,7 +27,7 @@ const Story = ({ data }) => {
                     <div className='rounded-lg h-[19rem] w-full xl:w-[45%] border border-gray-200 relative flex items-end'>
                         <img src="https://source.unsplash.com/random/?book/" className='h-full w-full object-cover rounded-lg absolute top-0' alt="" />
                         <div className="w-full rounded-lg h-[19rem]  absolute top-0 bg-gradient-to-tr from-cyan-400 to-transparent"></div>
-                        <div className="w-full p-4 z-20 text-white">
+                        <div className="w-full p-4 z-10 text-white">
                             <button className="text-sm">Story</button>
                             <Link  href={`/blog/article/${data[0].link}`} ><h2 className="font-bold text-xl">{story[0].title.slice(0, 100)}{story[0].title.length > 100 ? ".." : ""}</h2></Link>
                             <span className='text-sm'>{getFormattedDate(story[0].date)}</span>

@@ -7,7 +7,7 @@ const Popular = () => {
             <div className='rounded-lg h-60 w-full border border-gray-200 relative flex items-end'>
                 <img src="https://source.unsplash.com/random/?book/" className='h-full w-full object-cover rounded-lg absolute top-0' alt="" />
                 <div className="w-full rounded-lg h-60  absolute top-0 bg-gradient-to-tr from-cyan-400 to-transparent"></div>
-                <div className="w-full p-4 z-20 text-white">
+                <div className="w-full p-4 z-10 text-white">
                     <button className="text-sm">Story</button>
                     <h2 className="font-bold text-xl">Finding Strength in Adversity: A Journey of Resilience...</h2>
                     <span className='text-sm'>February 26, 2023</span>

@@ -6,7 +6,7 @@ const YouMightLike = () => {
         <style jsx>
             {`
             .you-might-like::-webkit-scrollbar{
-                height:15px;
+                height:0px;
               }
             //   .you-might-like::-webkit-scrollbar-button{
             //     background-color:rgba(6,182,212, 1);

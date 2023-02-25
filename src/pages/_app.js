@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import AppContext from 'AppContext'
 import { useState } from 'react';
+import NextNProgress from 'nextjs-progressbar';
 export default function App({ Component, pageProps }) {
   const [projectsTitle, setProjectsTitle] = useState('All Projects');
   const filterProjects = (category) => {
@@ -28,6 +29,7 @@ export default function App({ Component, pageProps }) {
   openDrawer:openDrawer,
   closeDrawer:closeDrawer
   }}>
+      <NextNProgress color="#2D2F33" height={1} />
     <Component {...pageProps} />
   </AppContext.Provider>
 }

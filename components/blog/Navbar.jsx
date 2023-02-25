@@ -28,15 +28,17 @@ const Navbar = () => {
     return (
         <div className='w-screen md:px-4 sticky top-0 bg-white z-20'>
             <div className="container m-auto flex justify-between items-center md:px-12 p-4 text-gray-800 text-sm">
-                <Link  href="/" className="flex items-center font-[Jeko-Bold] ">
+                <Link  href="/blog" className="flex items-center font-[Jeko-Bold] relative ">
+                    <label className='absolute -right-6 -top-[2px] text-[8px] bg-cyan-500 text-white p-1 h-3 rounded-t-full rounded-r-full flex items-center'>blog</label>
                     <span className="text-lg font-semibold">Mohd</span>
                     <span className="text-lg font-[Jeko-Medium] ml-1">Usman</span>
                 </Link>
                 <div className=" md:block hidden">
                     <ul className="flex gap-4 items-center">
-                        <a href='#contact' id='contacts-btn' onClick={()=>{setMenuClicked('contacts-btn')}} className='cursor-pointer hover:text-cyan-500 menu-item'>Story</a>
-                        <a href='#skills' id='skills-btn' onClick={()=>{setMenuClicked('skills-btn')}} className='cursor-pointer hover:text-cyan-500 menu-item'>Tips</a>
-                        <a href='#works' id='works-btn' onClick={()=>{setMenuClicked('works-btn')}} className='cursor-pointer hover:text-cyan-500 menu-item'>Contact</a>
+                        <Link href={'/'} id='portfolio-btn'  className='cursor-pointer hover:text-cyan-500 menu-item'>Portfolio</Link>
+                        <a href='#skills' id='skills-btn' className='cursor-pointer hover:text-cyan-500 menu-item'>Story</a>
+                        <a href='#works' id='works-btn'   className='cursor-pointer hover:text-cyan-500 menu-item'>Tips</a>
+                        <a href='#works' id='thoughts-btn'   className='cursor-pointer hover:text-cyan-500 menu-item'>Thoughts</a>
                     </ul>
                 </div>
                 <div className='md:block hidden'>
@@ -50,18 +52,18 @@ const Navbar = () => {
                     <MdOutlineMenuOpen className='' />
                 </div>
             </div>
-            <div id='mobile-menu' className="h-screen  flex flex-col justify-between w-[250px] fixed top-0 -right-full bg-[#2D2F33] drop-shadow-xl z-30 p-4 duration-300">
-                <ul className="flex flex-col gap-4 justify-start text-white">
+            <div id='mobile-menu' className="h-screen  flex flex-col justify-between w-[250px] fixed top-0 -right-full bg-white drop-shadow-xl z-50 p-4 duration-300">
+                <ul className="flex flex-col gap-4 justify-start text-gray-800">
                     <div onClick={toggleMobileMenu} className="w-full flex justify-start">
-                        <MdOutlineClose className='text-[#73F8AB] cursor-pointer' />
+                        <MdOutlineClose className='text-cyan-500 cursor-pointer' />
                     </div>
-                    <a href='#contact' id='mobile-contacts-btn' onClick={()=>{setMenuClicked('mobile-contacts-btn')}} className='cursor-pointer hover:text-[#73F8AB] menu-item'>Story</a>
-                    <a href='#skills' id='mobile-skills-btn' onClick={()=>{setMenuClicked('mobile-skills-btn')}}  className='cursor-pointer hover:text-[#73F8AB] menu-item'>Tips</a>
-                    <a href='#works' id='mobile-works-btn' onClick={()=>{setMenuClicked('mobile-works-btn')}} className='cursor-pointer hover:text-[#73F8AB] menu-item'>Contact</a>
+                    <a href='#contact' id='mobile-contacts-btn'   className='cursor-pointer hover:text-cyan-500 menu-item'>Story</a>
+                    <a href='#skills' id='mobile-skills-btn'    className='cursor-pointer hover:text-cyan-500 menu-item'>Tips</a>
+                    <a href='#works' id='mobile-works-btn'   className='cursor-pointer hover:text-cyan-500 menu-item'>TThoughts</a>
                 </ul>
-                <ul className="flex flex-col gap-4 items-start text-white">
-                    <a href='https://twitter.com/yem_usman' target="_blank"  className='flex items-center gap-1 cursor-pointer hover:text-[#73F8AB]'><AiOutlineTwitter /> Twitter</a>
-                    <a href='https://instagram.com/yem.usman' target="_blank" className='flex items-center gap-1 cursor-pointer hover:text-[#73F8AB]'><AiFillInstagram /> Instagram</a>
+                <ul className="flex flex-col gap-4 items-start text-gray-800">
+                    <a href='https://twitter.com/yem_usman' target="_blank"  className='flex items-center gap-1 cursor-pointer hover:text-cyan-500'><AiOutlineTwitter /> Twitter</a>
+                    <a href='https://instagram.com/yem.usman' target="_blank" className='flex items-center gap-1 cursor-pointer hover:text-cyan-500'><AiFillInstagram /> Instagram</a>
                 </ul>
             </div>
         </div>

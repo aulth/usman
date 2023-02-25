@@ -2,7 +2,7 @@ import Navbar from 'components/blog/Navbar'
 import React from 'react'
 import Article from 'components/blog/article/Article'
 import Footer from 'components/blog/Footer'
-import data from '../data'
+import data from 'public/data'
 const ArticlePage = ({data}) => {
   return (
     <>

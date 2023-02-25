@@ -3,7 +3,7 @@ import Navbar from 'components/blog/Navbar'
 import Recent from 'components/blog/home/Recent'
 import Home from 'components/blog/home/Home'
 import Footer from 'components/blog/Footer'
-import data from './data'
+import data from 'public/data'
 const Blog = () => {
 
   return (

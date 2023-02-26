@@ -24,10 +24,6 @@ const Publish = () => {
                     { value: 'Email', title: 'Email' },
                 ]
             });
-            setTimeout(() => {
-                const contentOne = '<h1 style="text-align: center;">Getting and Setting Content</h1> <p style="text-align: center;">Use the only WYSIWYG editor that’s trusted by <a href="https://tiny.cloud" target="_blank" rel="noopener">1.5M developers</a>.</p>'
-                tinymce.activeEditor.setContent(contentOne);
-            }, 1000);
         }
     }, [])
     const getContent = () => {

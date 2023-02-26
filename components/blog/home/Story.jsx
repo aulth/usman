@@ -7,9 +7,8 @@ const Story = ({ data }) => {
         setStory(data.filter(item => item.category == 'story'));
     }, [])
     const getFormattedDate = (str) => {
-        const dateString = str;
-        const date = new Date(dateString);
-        const month = date.toLocaleString("default", { month: "long" });
+        const date = new Date(str);
+        const month = date.toLocaleString('default', { month: 'long' });
         const day = date.getDate();
         const year = date.getFullYear();
         const formattedDate = `${month} ${day}, ${year}`;
@@ -30,7 +29,7 @@ const Story = ({ data }) => {
                         <div className="w-full p-4 z-10 text-white">
                             <Link href={`/blog/category/${story[0].category}`} className="text-sm">{story[0].category[0].toUpperCase() + story[0].category.slice(1).toLowerCase()}</Link>
                             <Link href={`/blog/article/${story[0].link}`} ><h2 className="font-bold text-xl">{story[0].title.slice(0, 100)}{story[0].title.length > 100 ? ".." : ""}</h2></Link>
-                            <span className='text-sm'>{getFormattedDate(story[0].date)}</span>
+                            <span className='text-sm'>{getFormattedDate(story[0].createdAt)}</span>
                         </div>
                     </div>
                     <div className='rounded-lg h-[19rem] w-full xl:w-[55%]  relative flex flex-col gap-4 '>
@@ -45,7 +44,7 @@ const Story = ({ data }) => {
                                     </div>
                                     <div className="flex flex-col">
                                         <Link href={`/blog/article/${story.link}`} className="font-semibold h-16 overflow-hidden leading-5">{story.title}</Link>
-                                        <span className='text-sm'>{getFormattedDate(story.date)}</span>
+                                        <span className='text-sm'>{getFormattedDate(story.createdAt)}</span>
                                     </div>
                                 </div>
                             })

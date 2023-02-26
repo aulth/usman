@@ -7,9 +7,9 @@ export default async function handler(req, res) {
         return res.json({ success: false, msg: "Method not allowed" });
     }
     const { data, id } = req.body;
-    console.log(data);
     const newArticle = await Article.findOneAndUpdate({_id:id},{
         title: data.title,
+        link: data.title.toLowerCase().replace(/[:,']/g, '').split(/\s+/).join('-'),
         category: data.category,
         cover: data.cover,
         content: data.content,

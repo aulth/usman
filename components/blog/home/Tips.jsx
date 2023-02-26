@@ -7,9 +7,8 @@ const Tips = ({ data }) => {
         setTips(data.filter(item => item.category == 'tips'));
     }, [])
     const getFormattedDate = (str) => {
-        const dateString = str;
-        const date = new Date(dateString);
-        const month = date.toLocaleString("default", { month: "long" });
+        const date = new Date(str);
+        const month = date.toLocaleString('default', { month: 'long' });
         const day = date.getDate();
         const year = date.getFullYear();
         const formattedDate = `${month} ${day}, ${year}`;
@@ -31,7 +30,7 @@ const Tips = ({ data }) => {
                             <img src={tips.cover} className='w-full aspect-[10/7] object-cover rounded-lg' alt="" />
                             <div className="w-full mt-1">
                                 <Link href={`/blog/article/${tips.link}`}><h2 className="font-bold">{tips.title.slice(0, 57)}</h2></Link>
-                                <span className='text-sm'>{getFormattedDate(tips.date)}</span>
+                                <span className='text-sm'>{getFormattedDate(tips.createdAt)}</span>
                             </div>
                         </div>
                     })

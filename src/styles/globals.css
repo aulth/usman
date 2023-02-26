@@ -23,7 +23,14 @@ body::-webkit-scrollbar-thumb {
   background-color: #73F8AB;
   outline: none;
 }
-
+.article-body ol{
+  list-style: decimal;
+  margin: 0;
+  padding: 0px 0px 0px 16px;
+}
+.article-body ol li{
+  margin: 0;
+}
 @font-face{
     font-family: 'Quantify';
     src:url('/fonts/Quantify.ttf')

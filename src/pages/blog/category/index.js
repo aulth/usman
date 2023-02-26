@@ -7,6 +7,7 @@ import Footer from 'components/blog/Footer'
 const Index = () => {
     return (
         <>
+        
             <Navbar />
             <div className="container m-auto flex gap-4 flex-col xl:flex-row xl:px-16 px-4 py-4">
                 <div className="w-full flex flex-col gap-4 xl:w-[60%]">

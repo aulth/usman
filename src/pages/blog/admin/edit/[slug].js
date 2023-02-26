@@ -1,11 +1,30 @@
 import Navbar from 'components/blog/Navbar'
 import React from 'react'
 import Edit from './../../../../../components/blog/admin/Edit'
+import Head from 'next/head'
 const EditPage = ({ data }) => {
     return (
         <>
-        <Navbar/>
-        <Edit article={data} />
+            <Navbar />
+            {
+                data &&
+                <>
+                    <Head>
+                        <title>{data.title}</title>
+                        <meta name="title" content={data.title} />
+                        <meta name="description" content="" />
+                    </Head>
+                    <Edit article={data} />
+                </>
+            }
+            {
+                !data &&
+                <div className="m-auto p-4">
+                    <h2 className="text-center">
+                        This Article is Not Available
+                    </h2>
+                </div>
+            }
         </>
     )
 }
@@ -21,8 +40,11 @@ export async function getServerSideProps(context) {
         body: JSON.stringify({ link: slug })
     })
     var data = await response.json();
-    data = data.article;
-    console.log(data);
+    if (data.success) {
+        data = data.article;
+    } else {
+        data = "";
+    }
     return {
         props: {
             data: data

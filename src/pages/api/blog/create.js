@@ -7,7 +7,6 @@ export default async function handler(req, res) {
         return res.json({ success: false, msg: "Method not allowed" });
     }
     const { data } = req.body;
-    console.log(data);
     const newArticle = await Article.create({
         title: data.title,
         link: data.title.toLowerCase().replace(/[:,']/g, '').split(/\s+/).join('-'),

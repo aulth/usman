@@ -3,7 +3,7 @@ import AdminPostItem from './AdminPostItem'
 import { RiLockPasswordLine } from 'react-icons/ri'
 import toast, { Toaster } from 'react-hot-toast';
 
-const Admin = () => {
+const Admin = ({ data }) => {
     const [authorized, setAuthorized] = useState(false)
     const verifyAdmin = (e) => {
         e.preventDefault();
@@ -29,12 +29,13 @@ const Admin = () => {
                 }
                 {
                     authorized &&
-                    <div className="w-full flex flex-col gap-4 bg-white rounded-lg p-4">
-                        <AdminPostItem />
-                        <AdminPostItem />
-                        <AdminPostItem />
-                        <AdminPostItem />
-                        <AdminPostItem />
+                    <div className='flex   flex-col   gap-4'>
+                        {
+                            data && data.length > 0 &&
+                            data.map((article, index) => {
+                                return <AdminPostItem data={article} key={index} />
+                            })
+                        }
                     </div>
                 }
             </div>

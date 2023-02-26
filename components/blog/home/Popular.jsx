@@ -14,43 +14,43 @@ const Popular = () => {
                 </div>
             </div>
             <div className='rounded-lg  w-full  relative flex flex-col gap-4 '>
-                    <div className="w-full h-16 flex gap-2 justify-start">
-                        <div className='w-24 rounded shrink-0'>
-                            <img src="https://source.unsplash.com/random/?book/" className='w-full h-full object-cover rounded-lg' alt="" />
-                        </div>
-                        <div className="flex flex-col">
-                            <h2 className="font-semibold h-16 overflow-hidden leading-5">Finding Strength in Adversity: A Journey of Resilience and Overcoming LifeChallenges with Courage, Perseverance, and Hope</h2>
-                            <span className='text-sm'>February 26, 2023</span>
-                        </div>
+                <div className="w-full h-16 flex gap-2 justify-start">
+                    <div className='w-24 rounded shrink-0'>
+                        <img src="https://source.unsplash.com/random/?book/" className='w-full h-full object-cover rounded-lg' alt="" />
                     </div>
-                    <div className="w-full h-16 flex gap-2 justify-start">
-                        <div className='w-24 rounded shrink-0'>
-                            <img src="https://source.unsplash.com/random/?book/" className='w-full h-full object-cover rounded-lg' alt="" />
-                        </div>
-                        <div className="flex flex-col">
-                            <h2 className="font-semibold h-16 overflow-hidden leading-5">Finding Strength in Adversity: A Journey of Resilience and Overcoming LifeChallenges with Courage, Perseverance, and Hope</h2>
-                            <span className='text-sm'>February 26, 2023</span>
-                        </div>
-                    </div>
-                    <div className="w-full h-16 flex gap-2 justify-start">
-                        <div className='w-24 rounded shrink-0'>
-                            <img src="https://source.unsplash.com/random/?book/" className='w-full h-full object-cover rounded-lg' alt="" />
-                        </div>
-                        <div className="flex flex-col">
-                            <h2 className="font-semibold h-16 overflow-hidden leading-5">Finding Strength in Adversity: A Journey of Resilience and Overcoming LifeChallenges with Courage, Perseverance, and Hope</h2>
-                            <span className='text-sm'>February 26, 2023</span>
-                        </div>
-                    </div>
-                    <div className="w-full h-16 flex gap-2 justify-start">
-                        <div className='w-24 rounded shrink-0'>
-                            <img src="https://source.unsplash.com/random/?book/" className='w-full h-full object-cover rounded-lg' alt="" />
-                        </div>
-                        <div className="flex flex-col">
-                            <h2 className="font-semibold h-16 overflow-hidden leading-5">Finding Strength in Adversity: A Journey of Resilience and Overcoming LifeChallenges with Courage, Perseverance, and Hope</h2>
-                            <span className='text-sm'>February 26, 2023</span>
-                        </div>
+                    <div className="flex flex-col">
+                        <h2 className="font-semibold h-16 overflow-hidden leading-5">Finding Strength in Adversity: A Journey of Resilience and Overcoming LifeChallenges with Courage, Perseverance, and Hope</h2>
+                        <span className='text-sm'>February 26, 2023</span>
                     </div>
                 </div>
+                <div className="w-full h-16 flex gap-2 justify-start">
+                    <div className='w-24 rounded shrink-0'>
+                        <img src="https://source.unsplash.com/random/?book/" className='w-full h-full object-cover rounded-lg' alt="" />
+                    </div>
+                    <div className="flex flex-col">
+                        <h2 className="font-semibold h-16 overflow-hidden leading-5">Finding Strength in Adversity: A Journey of Resilience and Overcoming LifeChallenges with Courage, Perseverance, and Hope</h2>
+                        <span className='text-sm'>February 26, 2023</span>
+                    </div>
+                </div>
+                <div className="w-full h-16 flex gap-2 justify-start">
+                    <div className='w-24 rounded shrink-0'>
+                        <img src="https://source.unsplash.com/random/?book/" className='w-full h-full object-cover rounded-lg' alt="" />
+                    </div>
+                    <div className="flex flex-col">
+                        <h2 className="font-semibold h-16 overflow-hidden leading-5">Finding Strength in Adversity: A Journey of Resilience and Overcoming LifeChallenges with Courage, Perseverance, and Hope</h2>
+                        <span className='text-sm'>February 26, 2023</span>
+                    </div>
+                </div>
+                <div className="w-full h-16 flex gap-2 justify-start">
+                    <div className='w-24 rounded shrink-0'>
+                        <img src="https://source.unsplash.com/random/?book/" className='w-full h-full object-cover rounded-lg' alt="" />
+                    </div>
+                    <div className="flex flex-col">
+                        <h2 className="font-semibold h-16 overflow-hidden leading-5">Finding Strength in Adversity: A Journey of Resilience and Overcoming LifeChallenges with Courage, Perseverance, and Hope</h2>
+                        <span className='text-sm'>February 26, 2023</span>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

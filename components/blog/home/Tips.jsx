@@ -19,7 +19,7 @@ const Tips = ({ data }) => {
         <div className="w-full rounded-lg p-4">
             <div className="w-full flex justify-between">
                 <h2 className="font-bold">Tips</h2>
-                <button className="flex items-center text-cyan-500">View all <IoIosArrowRoundForward className='mt-1' /></button>
+                <Link href={'/blog/category/tips'} className="flex items-center text-cyan-500">View all <IoIosArrowRoundForward className='mt-1' /></Link>
             </div>
             <div className="w-full flex flex-wrap   mt-4">
                 {

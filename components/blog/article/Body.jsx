@@ -13,7 +13,7 @@ const Body = ({data}) => {
     }
     return (
         <div className="w-full rounded-lg p-4">
-            <h3 className="text-sm text-cyan-500"><Link href="#" className='hover:text-cyan-600 hover:underline'>Home</Link> &gt; <Link href="#" className='hover:text-cyan-600 hover:underline'>Story</Link></h3>
+            <h3 className="text-sm text-cyan-500"><Link href={'/blog'} className='hover:text-cyan-600 hover:underline'>Home</Link> &gt; <Link href={`/blog/category/${data[0].category}`} className='hover:text-cyan-600 hover:underline'>{data[0].category[0].toUpperCase()+data[0].category.slice(1).toLowerCase()}</Link></h3>
             <h1 className="font-bold mt-2">{data[0]?.title}</h1>
             <div className="w-full flex justify-between items-center text-sm mt-2">
                 <span>{getFormattedDate(data[0]?.date)}</span>

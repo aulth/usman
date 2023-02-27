@@ -35,7 +35,7 @@ const AdminPostItem = ({ data }) => {
                         <img src={data.cover} className='w-full h-full rounded-lg object-cover' alt="" />
                     </div>
                     <div className="w-full flex flex-col justify-start">
-                        <a href={`/blog/article/${data.link}`} target="_blank"><h2 className="font-bold text-lg md:max-h-16 overflow-hidden leading-8">{data.title.slice(0, 138)}{data.title.length > 138 ? ".." : ""}</h2></a>
+                        <a href={`/blog/article/${data.link}`} target="_blank"><h2 className="font-bold text-lg md:max-h-16 overflow-hidden leading-8 hover:text-cyan-500">{data.title.slice(0, 138)}{data.title.length > 138 ? ".." : ""}</h2></a>
                         <p className='max-h-20 overflow-hidden leading-7 description' >
                             {data.content.replace(/<[^>]+>/g, '')}
                         </p>

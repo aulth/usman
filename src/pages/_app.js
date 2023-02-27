@@ -2,8 +2,10 @@ import '@/styles/globals.css'
 import AppContext from 'AppContext'
 import { useState } from 'react';
 import NextNProgress from 'nextjs-progressbar';
+import { useRouter } from 'next/router';
 export default function App({ Component, pageProps }) {
   const [projectsTitle, setProjectsTitle] = useState('All Projects');
+  const router = useRouter();
   const filterProjects = (category) => {
     openDrawer();
     document.querySelectorAll('.project').forEach(item => { item.classList.remove('flex'); item.classList.add('hidden') });
@@ -29,7 +31,7 @@ export default function App({ Component, pageProps }) {
   openDrawer:openDrawer,
   closeDrawer:closeDrawer
   }}>
-      <NextNProgress color="#2D2F33" height={1} />
+      <NextNProgress color={router.pathname=='/'?'#73F8AB':'#2D2F33'} height={router.pathname=='/'?2:1} />
     <Component {...pageProps} />
   </AppContext.Provider>
 }

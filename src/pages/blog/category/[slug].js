@@ -2,6 +2,7 @@ import Category from 'components/blog/category/Category'
 import Navbar from 'components/blog/Navbar'
 import React from 'react'
 import Head from 'next/head'
+import Footer from 'components/blog/Footer'
 const CategoryPage = ({ data }) => {
   return (
     <>
@@ -40,6 +41,7 @@ const CategoryPage = ({ data }) => {
           </h2>
         </div>
       }
+      <Footer/>
     </>
   )
 }

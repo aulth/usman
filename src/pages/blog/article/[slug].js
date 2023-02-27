@@ -10,7 +10,7 @@ const ArticlePage = ({ data }) => {
       <Navbar />
 
       {
-        data &&
+        data && data.live &&
         <>
           <Head>
             {/* <!-- Primary Meta Tags --> */}
@@ -39,6 +39,12 @@ const ArticlePage = ({ data }) => {
         !data &&
         <div className='container m-auto md:px-12 px-4 py-4'>
           This article is not available
+        </div>
+      }
+      {
+        data && !data.live &&
+        <div className='container m-auto md:px-12 px-4 py-4'>
+          This article has been made private
         </div>
       }
       <Footer />

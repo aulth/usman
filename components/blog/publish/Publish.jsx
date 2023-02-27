@@ -3,6 +3,7 @@ import { AiOutlineSave } from 'react-icons/ai'
 import { RiArchiveDrawerLine } from 'react-icons/ri'
 import { IoIosSend } from 'react-icons/io'
 import { MdOutlineInsertPhoto } from 'react-icons/md'
+import {IoMdClose} from 'react-icons/io'
 import toast, { Toaster } from 'react-hot-toast';
 import { IKContext, IKUpload } from 'imagekitio-react';
 const publicKey = process.env.NEXT_PUBLIC_imagekitPublicKey;
@@ -10,7 +11,7 @@ const urlEndpoint = process.env.NEXT_PUBLIC_imagekitUrlEndPoint;
 const authenticationEndpoint = process.NODE_ENV == 'production' ? 'https://mohd-usman.vercel.app/api/imagekit/get' : 'http://localhost:3000/api/imagekit/get'
 console.log(authenticationEndpoint)
 const Publish = () => {
-    const [data, setData] = useState({ title: '', category: '', cover:'' });
+    const [data, setData] = useState({ title: '', category: '', cover: '' });
     useEffect(() => {
         if (typeof window != undefined) {
             tinymce.init({
@@ -47,18 +48,28 @@ const Publish = () => {
             toast.error('Please Upload Cover Photo')
             return;
         }
-        const response = await fetch('/api/blog/create', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json',
-            },
-            body: JSON.stringify({ data: { title: data.title, category: data.category, cover:data.cover, content: getContent(), live: true } })
-        })
-        const json = await response.json();
-        if(json.success){
-            toast.success(json.msg)
-        }else{
-            toast.error(json.msg)
+        document.querySelector('.adminVerify').classList.remove('hidden');
+    }
+    const verifyAndPublish = async (e) => {
+        e.preventDefault();
+        if (document.getElementById('pin').value == process.env.NEXT_PUBLIC_ADMIN_PIN) {
+            toast.success("Authenticated");
+            document.querySelector('.adminVerify').classList.add('hidden');
+            const response = await fetch('/api/blog/create', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json',
+                },
+                body: JSON.stringify({ data: { title: data.title, category: data.category, cover: data.cover, content: getContent(), live: true } })
+            })
+            const json = await response.json();
+            if (json.success) {
+                toast.success(json.msg)
+            } else {
+                toast.error(json.msg)
+            }
+        } else {
+            toast.error("Not authenticated")
         }
     }
     const handleOnSave = async (e) => {
@@ -76,12 +87,12 @@ const Publish = () => {
             headers: {
                 'content-type': 'application/json',
             },
-            body: JSON.stringify({ data: { title: data.title, category: data.category,  cover:data.cover, content: getContent(), live: false } })
+            body: JSON.stringify({ data: { title: data.title, category: data.category, cover: data.cover, content: getContent(), live: false } })
         })
         const json = await response.json();
-        if(json.success){
+        if (json.success) {
             toast.success(json.msg)
-        }else{
+        } else {
             toast.error(json.msg)
         }
     }
@@ -91,7 +102,7 @@ const Publish = () => {
     };
     const onSuccess = async (res) => {
         toast.success("Cover Photo Uploaded");
-        setData({...data, cover:res.url});
+        setData({ ...data, cover: res.url });
     }
     return (
         <>
@@ -130,6 +141,22 @@ const Publish = () => {
                     </div>
                 </form>
             </div>
+            <div className="modal fixed w-full h-full top-0 left-0 flex items-center justify-center z-50 hidden  adminVerify">
+                {/* Modal background */}
+                <div className="modal-overlay absolute w-full h-full bg-gray-900 opacity-50" />
+                {/* Modal content */}
+                <div className="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                    <form onSubmit={verifyAndPublish} className="m-auto w-full flex flex-col gap-4 p-4">
+                        <h2 className="font-semibold text-center">Admin Password</h2>
+                        <input type="text" placeholder='Pin' id='pin' className='w-full p-1 focus:border-cyan-400 focus:outline-none border-b border-gray-200' required />
+                        <div className="w-full flex gap-2">
+                            <button type="submit" className='w-full px-2 py-1 bg-gradient-to-tr from-cyan-400 to-blue-400 text-white'>Verify</button>
+                            <button type="button" onClick={()=>{document.querySelector('.adminVerify').classList.add('hidden')}} className='w-8 flex justify-center items-center  p-1 bg-gradient-to-tr from-cyan-400 to-blue-400 text-white'><IoMdClose className='text-white'/></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </>
     )
 }

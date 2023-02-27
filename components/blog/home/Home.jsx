@@ -18,7 +18,7 @@ const Home = ({data}) => {
                     <Tips  data={data} />
                 </div>
             </div>
-            <div className="w-full flex flex-col gap-4 xl:w-[40%]">
+            <div className="w-full flex flex-col gap-4 xl:w-[40%] pb-4">
                 <div className="w-full rounded-lg bg-white">
                     <Popular  data={data} />
                 </div>

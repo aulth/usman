@@ -7,6 +7,7 @@ const Article  = new mongoose.Schema({
     content:String,
     views:Number,
     live:Boolean,
+    remarks:Array,
 },{timestamps:true})
 
 mongoose.models={};

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import Link from 'next/link';
 const Popular = () => {
     const [data, setData] = useState();
     const getFormattedDate = (str) => {
@@ -29,11 +29,11 @@ const Popular = () => {
             {
                 data && data.length > 0 &&
                 <div className='rounded-lg h-60 w-full border border-gray-200 relative flex items-end'>
-                    <img src="https://source.unsplash.com/random/?book/" className='h-full w-full object-cover rounded-lg absolute top-0' alt="" />
+                    <img src={data && data[0]?.cover} className='h-full w-full object-cover rounded-lg absolute top-0' alt="" />
                     <div className="w-full rounded-lg h-60  absolute top-0 bg-gradient-to-tr from-cyan-400 to-transparent"></div>
                     <div className="w-full p-4 z-10 text-white">
                         <button className="text-sm">{data && data[0]?.category[0].toUpperCase()}{data && data[0]?.category.slice(1).toLowerCase()}</button>
-                        <h2 className="font-bold text-xl">{data && data[0]?.title.slice(0, 58)}{data && data[0]?.title.length > 57 ? ".." : ""}</h2>
+                        <Link href={`/blog/article/${data && data[0]?.link}`} ><h2 className="font-bold text-xl">{data && data[0]?.title.slice(0, 58)}{data && data[0]?.title.length > 57 ? ".." : ""}</h2></Link>
                         <span className='text-sm'>{getFormattedDate(data && data[0]?.createdAt)}</span>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ const Popular = () => {
                                 <img src={data.cover} className='w-full h-full object-cover rounded-lg' alt="" />
                             </div>
                             <div className="flex flex-col">
-                                <h2 className="font-semibold h-16 overflow-hidden leading-5">{data && data?.title}</h2>
+                                <Link href={`/blog/article/${data?.link}`}  className="font-semibold h-16 overflow-hidden leading-5 hover:text-cyan-500">{data && data?.title}</Link>
                                 <span className='text-sm'>{getFormattedDate(data && data?.createdAt)}</span>
                             </div>
                         </div>

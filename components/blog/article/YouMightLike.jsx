@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { IoIosArrowRoundForward } from 'react-icons/io'
+import Link from 'next/link';
 const YouMightLike = ({ category }) => {
     const [data, setData] = useState();
     const fetchData = async () => {
@@ -47,7 +48,7 @@ const YouMightLike = ({ category }) => {
             <div className="w-full rounded-lg p-4 ">
                 <div className="w-full flex justify-between">
                     <h2 className="font-bold">You Might Like</h2>
-                    <button className="flex items-center text-cyan-500">View all <IoIosArrowRoundForward className='mt-1' /></button>
+                    <Link href={`/blog/category/${category}`} className="flex items-center text-cyan-500">View all <IoIosArrowRoundForward className='mt-1' /></Link>
                 </div>
                 <div className="w-full overflow-x-scroll overflow-y-hidden flex gap-4 mt-4 you-might-like ">
                     {

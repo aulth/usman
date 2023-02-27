@@ -27,14 +27,14 @@ const Recent = ({ data }) => {
                         <div className="w-1/2 rounded-lg border border-gray-300 h-auto  xl:h-72 relative">
                             <img src={data[1].cover} className='h-36 xl:h-[11rem] w-full object-cover rounded-t-lg' alt="" />
                             <div className="p-2">
-                                <Link href={`/blog/article/${data[1].link}`} ><h2 className="font-bold ">{data[1].title.slice(0, 68)} {data[1].title.length > 68 ? ".." : ""}</h2></Link>
+                                <Link href={`/blog/article/${data[1]?.link}`} ><h2 className="font-bold ">{data[1]?.title.slice(0, 68)} {data[1]?.title.length > 68 ? ".." : ""}</h2></Link>
                                 <span className='text-sm'>{getFormattedDate(data[1].createdAt)}</span>
                             </div>
                         </div>
                         <div className="w-1/2 rounded-lg border border-gray-300 h-auto  xl:h-72 relative">
                             <img src={data[2].cover} className='h-36 xl:h-[11rem] w-full object-cover rounded-t-lg' alt="" />
                             <div className="p-2">
-                                <Link href={`/blog/article/${data[2].link}`} ><h2 className="font-bold ">{data[2].title.slice(0, 68)} {data[2].title.length > 68 ? ".." : ""}</h2></Link>
+                                <Link href={`/blog/article/${data[2]?.link}`} ><h2 className="font-bold ">{data[2]?.title.slice(0, 68)} {data[2]?.title.length > 68 ? ".." : ""}</h2></Link>
                                 <span className='text-sm'>{getFormattedDate(data[2].createdAt)}</span>
                             </div>
                         </div>

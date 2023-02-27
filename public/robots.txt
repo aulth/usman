@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://mohd-usman.vercel.app/sitemap.xml

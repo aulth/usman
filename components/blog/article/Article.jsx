@@ -16,10 +16,10 @@ const Article = ({data}) => {
                     <YouMightLike category={data.category}/>
                 </div>
                 <div className="w-full rounded-lg bg-white ">
-                    <Comment/>
+                    <Comment data={data.remarks}/>
                 </div>
                 <div className="w-full rounded-lg bg-white ">
-                    <PostComment/>
+                    <PostComment id={data._id}/>
                 </div>
             </div>
             <div className="w-full flex flex-col gap-4 xl:w-[40%]">

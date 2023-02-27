@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { AiOutlineTwitter, AiFillGithub } from 'react-icons/ai'
-import { MdOutlineMenuOpen, MdOutlineClose } from 'react-icons/md'
+import { MdOutlineMenuOpen, MdOutlineClose, MdOutlineSpeakerNotes } from 'react-icons/md'
 import { HiOutlineMail } from 'react-icons/hi'
 import { FiMessageSquare } from 'react-icons/fi'
 import Link from 'next/link'
@@ -50,10 +50,9 @@ const Navbar = () => {
                 </div>
                 <div className='md:hidden flex gap-2'>
                     <Link href={"/blog"}>
-                    <div className="flex items-center mr-0 p-1text-[#73F8AB] duration-100 aspect-square cursor-pointer relative hover:text-[#73F8AB]">
-                        <FiMessageSquare className='text-xl cursor-pointer' />
-                        <label className='text-[5px] absolute left-[5px] -mt-0.5 cursor-pointer'>blog</label>
-                    </div></Link>
+                        <div className="flex items-center mr-0 p-1text-[#73F8AB] duration-100 aspect-square cursor-pointer relative hover:text-[#73F8AB]">
+                            <MdOutlineSpeakerNotes className='text-xl cursor-pointer mt-0.5' />
+                        </div></Link>
                     <div onClick={toggleMobileMenu} className="flex items-center mr-0 p-1  rounded-full border  border-[#73F8AB] hover:text-[#2D2F33] hover:bg-[#73F8AB] text-[#73F8AB] duration-100 aspect-square cursor-pointer">
                         <MdOutlineMenuOpen className='' />
                     </div>
@@ -64,6 +63,7 @@ const Navbar = () => {
                     <div onClick={toggleMobileMenu} className="w-full flex justify-start">
                         <MdOutlineClose className='text-[#73F8AB] cursor-pointer' />
                     </div>
+                    <Link href={'/blog'}  className='cursor-pointer hover:text-[#73F8AB] menu-item'>Blog</Link>
                     <a href='#contact' id='mobile-contacts-btn' onClick={() => { setMenuClicked('mobile-contacts-btn') }} className='cursor-pointer hover:text-[#73F8AB] menu-item'>Contacts</a>
                     <a href='#skills' id='mobile-skills-btn' onClick={() => { setMenuClicked('mobile-skills-btn') }} className='cursor-pointer hover:text-[#73F8AB] menu-item'>Skills</a>
                     <a href='#works' id='mobile-works-btn' onClick={() => { setMenuClicked('mobile-works-btn') }} className='cursor-pointer hover:text-[#73F8AB] menu-item'>Works</a>

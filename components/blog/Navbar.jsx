@@ -26,7 +26,7 @@ const Navbar = () => {
     }, [menuClicked])
 
     return (
-        <div className='w-screen md:px-4 sticky top-0 bg-white z-20'>
+        <div className='w-screen  md:px-4 sticky top-0 bg-white z-20'>
             <div className="container m-auto flex justify-between items-center md:px-12 p-4 text-gray-800 text-sm">
                 <Link href="/blog" className="flex items-center font-[Jeko-Bold] relative ">
                     <label className='absolute -right-6 -top-[2px] text-[8px] bg-cyan-500 text-white p-1 h-3 rounded-t-full rounded-r-full flex items-center'>blog</label>
@@ -57,9 +57,10 @@ const Navbar = () => {
                     <div onClick={toggleMobileMenu} className="w-full flex justify-start">
                         <MdOutlineClose className='text-cyan-500 cursor-pointer' />
                     </div>
-                    <a href='#contact' id='mobile-contacts-btn' className='cursor-pointer hover:text-cyan-500 menu-item'>Story</a>
-                    <a href='#skills' id='mobile-skills-btn' className='cursor-pointer hover:text-cyan-500 menu-item'>Tips</a>
-                    <a href='#works' id='mobile-works-btn' className='cursor-pointer hover:text-cyan-500 menu-item'>TThoughts</a>
+                    <Link href={"/"} id='mobile-contacts-btn' className='cursor-pointer hover:text-cyan-500 menu-item'>Portfolio</Link>
+                    <Link href={'/blog/category/story'} id='mobile-contacts-btn' className='cursor-pointer hover:text-cyan-500 menu-item'>Story</Link>
+                    <Link href={'/blog/category/tips'} id='mobile-skills-btn' className='cursor-pointer hover:text-cyan-500 menu-item'>Tips</Link>
+                    <Link href={'/blog/category/thoughts'} id='mobile-works-btn' className='cursor-pointer hover:text-cyan-500 menu-item'>Thoughts</Link>
                 </ul>
                 <ul className="flex flex-col gap-4 items-start text-gray-800">
                     <a href='https://twitter.com/yem_usman' target="_blank" className='flex items-center gap-1 cursor-pointer hover:text-cyan-500'><AiOutlineTwitter /> Twitter</a>

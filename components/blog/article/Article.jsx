@@ -13,7 +13,7 @@ const Article = ({data}) => {
                     <Body data={data} />
                 </div>
                 <div className="w-full rounded-lg bg-white ">
-                    <YouMightLike/>
+                    <YouMightLike category={data.category}/>
                 </div>
                 <div className="w-full rounded-lg bg-white ">
                     <Comment/>

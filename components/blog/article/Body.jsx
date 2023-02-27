@@ -24,6 +24,10 @@ const Body = ({ data }) => {
     }
     const sharePost = async () => {
         try {
+            if (!navigator.canShare) {
+                output.textContent = `Your browser doesn't support the Web Share API.`
+                return
+              }
             await navigator.share(shareData);
         } catch (err) {
             toast.error(err)

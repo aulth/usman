@@ -9,7 +9,7 @@ import { IKContext, IKUpload } from 'imagekitio-react';
 import { Editor } from '@tinymce/tinymce-react';
 const publicKey = process.env.NEXT_PUBLIC_imagekitPublicKey;
 const urlEndpoint = process.env.NEXT_PUBLIC_imagekitUrlEndPoint;
-const authenticationEndpoint = process.NODE_ENV == 'production' ? 'https://mohd-usman.vercel.app/api/imagekit/get' : 'http://localhost:3000/api/imagekit/get'
+const authenticationEndpoint = 'https://mohd-usman.vercel.app/api/imagekit/get';
 console.log(authenticationEndpoint)
 const Edit = ({ article }) => {
     const [data, setData] = useState(article);

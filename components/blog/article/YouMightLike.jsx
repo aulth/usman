@@ -57,7 +57,7 @@ const YouMightLike = ({ category }) => {
                             return <div key={index} className='w-64 shrink-0'>
                             <img src={data.cover} className='w-full aspect-[10/7] object-cover rounded-lg' alt="" />
                             <div className="w-full mt-1">
-                                <h2 className="font-bold">{data.title.slice(0, 57)}{data.title.length>57?"..":""}</h2>
+                                <Link href={`/blog/article/${data.link}`}><h2 className="font-bold">{data.title.slice(0, 57)}{data.title.length>57?"..":""}</h2></Link>
                                 <span className='text-sm'>{getFormattedDate(data.createdAt)}</span>
                             </div>
                         </div>

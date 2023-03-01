@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Link from 'next/link';
 const Recent = ({ data }) => {
     const getFormattedDate = (str) => {
@@ -9,6 +9,7 @@ const Recent = ({ data }) => {
         const formattedDate = `${month} ${day}, ${year}`;
         return formattedDate;
     }
+    
     return (
         <div className="container m-auto flex gap-4 flex-col  xl:flex-row justify-center  xl:px-16 px-4 py-4">
             {

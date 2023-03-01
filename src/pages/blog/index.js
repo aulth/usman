@@ -29,7 +29,7 @@ const Blog = ({data}) => {
             <meta property="twitter:image" content="" />
           </Head>
     <Navbar/>
-    <Recent data={data}/>
+    <Recent data={data.reverse()}/>
     <Home data={data}/>
     <Footer/>
     </>

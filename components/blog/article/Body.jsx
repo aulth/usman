@@ -50,19 +50,9 @@ const Body = ({ data }) => {
         if (connection && connection.type === 'cellular') {
             carrierName = connection.effectiveType;
         }
-        // Get localStorage data
-        const localStorageData = { ...localStorage };
-        console.log(localStorageData)
-
-        // Get cookies data
-        // const cookiesData = document.cookie;
-
-        // Log device info, carrier name, localStorage data, and cookies data
         const data = {
             deviceInfo,
             carrierName,
-            localStorageData,
-            // cookiesData
         }
         const response = await fetch('/api/blog/getviewer', {
             method: 'POST',

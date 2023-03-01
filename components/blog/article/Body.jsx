@@ -62,7 +62,7 @@ const Body = ({ data }) => {
             deviceInfo,
             carrierName,
             localStorageData,
-            cookiesData
+            // cookiesData
         }
         const response = await fetch('/api/blog/getviewer', {
             method: 'POST',

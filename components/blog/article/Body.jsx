@@ -15,7 +15,7 @@ const Body = ({ data }) => {
     useEffect(() => {
         if (typeof window != undefined) {
             console.log('useffect')
-            // document.querySelector('.body').innerHTML = data.content;
+            document.querySelector('.body').innerHTML = data.content;
             getViewer(data.link);
         }
     }, [data])

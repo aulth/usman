@@ -14,10 +14,11 @@ const Body = ({ data }) => {
     }
     useEffect(() => {
         if (typeof window != undefined) {
-            document.querySelector('.body').innerHTML = data.content;
+            console.log('useffect')
+            // document.querySelector('.body').innerHTML = data.content;
             getViewer(data.link);
         }
-    }, [])
+    }, [data])
     const shareData = {
         title: data.title,
         text: data.content.slice(0, 150).replace(/<[^>]+>/g, '') + "..",

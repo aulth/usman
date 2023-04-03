@@ -24,12 +24,12 @@ export default function Home({ name }) {
     <>
       <Head>
         <title>Mohd Usman | Full Stack Web Developer | Personal & Online Projects</title>
-        <meta name="description" content="As a Full Stack Web Developer, I specialize in creating responsive and user-friendly designs for personal, online, and freelance projects. Seeking internship opportunities. Check out my portfolio!" />
+        <meta name="description" content="As a Full Stack Web Developer, I have worked on personal, online, and freelance projects. Check out my portfolio to see what I can do for you. Currently seeking internship opportunities." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#2D2F33" ></meta>
         <link rel="canonical" href="https://mohd-usman.vercel.app/" />
-        <link rel="alternate" href="https://mohd-usman.vercel.app/" hrefLang="en-in" />
+        <link rel="alternate" href="https://mohd-usman.vercel.app/" hreflang="en-in" />
         {/* facebook open graph  */}
         <meta property="og:title" content="Mohd Usman - full stack web developer" />
         <meta property="og:site_name" content="Mohd Usman" />
@@ -37,21 +37,7 @@ export default function Home({ name }) {
         <meta property="og:description" content="As a Full Stack Web Developer, I have worked on personal, online, and freelance projects. Check out my portfolio to see what I can do for you. Currently seeking internship opportunities." />
         <meta property="og:type" content="profile" />
         <meta property="og:image" content="https://mohd-usman.vercel.app/images/usman.png" />
-
-        {/* twitter card  */}
-        <div>
-          <meta name="twitter:card" content="app" />
-          <meta name="twitter:site" content="@yem_usman" />
-          <meta name="twitter:description" content="Mohd Usman is an experienced Full Stack Web Developer skilled in React, Angular, Node.js, and MongoDB. He is adept at designing RESTful APIs, integrating third-party services, and optimizing web app." />
-          <meta name="twitter:app:name:iphone" content="Mohd Usman" />
-          <meta name="twitter:app:id:iphone" content="" />
-          <meta name="twitter:app:name:ipad" content="Mohd Usman" />
-          <meta name="twitter:app:id:ipad" content="" />
-          <meta name="twitter:app:name:googleplay" content="Mohd Usman" />
-          <meta name="twitter:app:id:googleplay" content="" />
-          <meta name="twitter:app:country" content="" />
-        </div>
-
+    
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: `
           {

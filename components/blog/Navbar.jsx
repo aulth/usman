@@ -28,11 +28,13 @@ const Navbar = () => {
     return (
         <div className='w-screen  md:px-4 sticky top-0 bg-white z-20'>
             <div className="container m-auto flex justify-between items-center md:px-12 p-4 text-gray-800 text-sm">
-                <Link href="/blog" className="flex items-center font-[Jeko-Bold] relative ">
-                    <label className='absolute -right-6 -top-[2px] text-[8px] bg-cyan-500 text-white p-1 h-3 rounded-t-full rounded-r-full flex items-center'>blog</label>
-                    <span className="text-lg font-semibold">Mohd</span>
-                    <span className="text-lg font-[Jeko-Medium] ml-1">Usman</span>
-                </Link>
+                <h1>
+                    <Link href="/blog" className="flex items-center font-[Jeko-Bold] relative ">
+                        <label className='absolute -right-6 -top-[2px] text-[8px] bg-cyan-500 text-white p-1 h-3 rounded-t-full rounded-r-full flex items-center'>blog</label>
+                        <span className="text-lg font-semibold">Mohd</span>
+                        <span className="text-lg font-[Jeko-Medium] ml-1">Usman</span>
+                    </Link>
+                </h1>
                 <div className=" md:block hidden">
                     <ul className="flex gap-4 items-center">
                         <Link href={'/'} id='portfolio-btn' className='cursor-pointer hover:text-cyan-500 menu-item'>Portfolio</Link>

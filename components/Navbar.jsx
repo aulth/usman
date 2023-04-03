@@ -29,10 +29,10 @@ const Navbar = () => {
     return (
         <div className='w-screen md:px-4 sticky top-0 bg-[#2D2F33] z-20'>
             <div className="container m-auto flex justify-between items-center md:px-12 p-4 text-white text-sm">
-                <div className="flex items-center font-[Jeko-Bold] ">
+                <h1 className="flex items-center font-[Jeko-Bold] ">
                     <a href='#' className="text-lg font-semibold">Mohd</a>
                     <a href='#' className="text-lg font-[Jeko-Medium] ml-1">Usman</a>
-                </div>
+                </h1>
                 <div className=" md:block hidden">
                     <ul className="flex gap-4 items-center">
                         <Link href={"/blog"} id='blog-btn' className='text-[#73F8AB] cursor-pointer hover:text-[#73F8AB] menu-item'>Blog</Link>
@@ -43,9 +43,9 @@ const Navbar = () => {
                 </div>
                 <div className='md:block hidden'>
                     <ul className="flex gap-4 items-center">
-                        <a href='https://twitter.com/yem_usman' target="_blank" className='flex items-center gap-1 cursor-pointer hover:text-[#73F8AB]'><AiOutlineTwitter /> Twitter</a>
-                        <a href='https://github.com/aulth' target="_blank" className='flex items-center gap-1 cursor-pointer hover:text-[#73F8AB]'><AiFillGithub /> Github</a>
-                        <a href='mailto:mohdusman.you@gmail.com?subject=Inquiry&body=Hello%2C%0A%0A I have a question about... ' target="_blank" className='flex items-center  cursor-pointer rounded-full border border-[#73F8AB] p-1 hover:bg-[#73F8AB] hover:text-white text-[#73F8AB]'><HiOutlineMail /></a>
+                        <a href='https://twitter.com/yem_usman' target="_blank" rel="nofollow" className='flex items-center gap-1 cursor-pointer hover:text-[#73F8AB]'><AiOutlineTwitter /> Twitter</a>
+                        <a href='https://github.com/aulth' target="_blank" rel="nofollow" className='flex items-center gap-1 cursor-pointer hover:text-[#73F8AB]'><AiFillGithub /> Github</a>
+                        <a href='mailto:mohdusman.you@gmail.com?subject=Inquiry&body=Hello%2C%0A%0A I have a question about... ' target="_blank" rel="nofollow" className='flex items-center  cursor-pointer rounded-full border border-[#73F8AB] p-1 hover:bg-[#73F8AB] hover:text-white text-[#73F8AB]'><HiOutlineMail /></a>
                     </ul>
                 </div>
                 <div className='md:hidden flex gap-2'>
@@ -69,8 +69,8 @@ const Navbar = () => {
                     <a href='#works' id='mobile-works-btn' onClick={() => { setMenuClicked('mobile-works-btn') }} className='cursor-pointer hover:text-[#73F8AB] menu-item'>Works</a>
                 </ul>
                 <ul className="flex flex-col gap-4 items-start text-white">
-                    <a href='https://twitter.com/yem_usman' target="_blank" className='flex items-center gap-1 cursor-pointer hover:text-[#73F8AB]'><AiOutlineTwitter /> Twitter</a>
-                    <a href='https://github.com/aulth' target="_blank" className='flex items-center gap-1 cursor-pointer hover:text-[#73F8AB]'><AiFillGithub /> Github</a>
+                    <a href='https://twitter.com/yem_usman' target="_blank" rel="nofollow" className='flex items-center gap-1 cursor-pointer hover:text-[#73F8AB]'><AiOutlineTwitter /> Twitter</a>
+                    <a href='https://github.com/aulth' target="_blank" rel="nofollow" className='flex items-center gap-1 cursor-pointer hover:text-[#73F8AB]'><AiFillGithub /> Github</a>
                 </ul>
             </div>
         </div>

@@ -35,13 +35,13 @@ const LandingPage = () => {
         <div className="w-full md:w-1/2 md:h-[calc(100vh-60px)] p-4 flex items-center">
           <div className="w-3/4 m-auto  rounded-full bg-[#29282D] aspect-square relative">
             <div className="w-full absolute top-0">
-              <img src="/images/usman.png" className='object-cover rounded-full aspect-square w-full  overflow-hidden' alt="" />
+              <img src="/images/usman.png" className='object-cover rounded-full aspect-square w-full  overflow-hidden' alt="Mohd Usman" />
             </div>
             <div className="md:w-16 w-12 md:h-16 h-12 flex justify-center items-center rounded-full bg-[#29282D] absolute top-3/4 drop-shadow-lg">
               <GrReactjs className='md:text-4xl text-3xl text-[#61dbfb]' />
             </div>
             <div className="md:w-16 w-12 md:h-16 h-12 flex justify-center items-center rounded-full bg-[#29282D] absolute top-[90%] left-1/2 drop-shadow-lg">
-              <img src="/images/cpp.svg" className='w-[2.225rem] md:w-[3rem]' alt="" />
+              <img src="/images/cpp.svg" className='w-[2.225rem] md:w-[3rem]' alt="C++" />
             </div>
             <div className="md:w-20 w-14 md:h-20 h-14 flex justify-center items-center rounded-full bg-[#29282D] absolute top-3/4 left-3/4 drop-shadow-lg">
               <FaNodeJs className='md:text-5xl text-4xl text-[#73F8AB]' />

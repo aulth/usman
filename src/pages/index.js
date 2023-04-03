@@ -24,7 +24,7 @@ export default function Home({ name }) {
     <>
       <Head>
         <title>Mohd Usman | Full Stack Web Developer | Personal & Online Projects</title>
-        <meta name="description" content="As a Full Stack Web Developer, I specialize in creating responsive and user-friendly designs for personal, online, and freelance projects. Seeking internship opportunities. Check out my portfolio!" />
+        <meta name="description" content="Full Stack Web Developer with expertise in creating responsive, user-friendly designs for personal, online, and freelance projects. Seeking internships. Portfolio available." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#2D2F33" ></meta>

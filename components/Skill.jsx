@@ -6,7 +6,7 @@ const Skill = ({title, percent, color}) => {
         <div className='w-[48%] text-white my-4'>
             <p>{title}</p>
             <div className="w-full h-2 bg-gray-200">
-                <div style={{width:`${percent}%`, background:color}} className={`h-2 relative`}>
+                <div id={title} className={`h-2 relative`}>
                     <div className='absolute -top-3 -right-2'>
                         <span className='absolute -top-4 -right-2 text-sm'>{percent}%</span>
                         <VscDebugBreakpointFunction className='rotate-180 ' />

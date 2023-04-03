@@ -16,6 +16,46 @@ body::-webkit-scrollbar-thumb {
   background-color: #73F8AB;
   outline: none;
 }
+#HTML{
+width:80%;
+background:#f06529;
+}
+#CSS{
+width:80%;
+background:#f06529;
+}
+#Javascript{
+width:80%;
+background:#f06529;
+}
+#NodeJs{
+width:55%;
+background:#68a063;
+}
+#ReactJs{
+width:80%;
+background:#61dbfb;
+}
+#TailwindCSS{
+width:50%;
+background:#36B7F0;
+}
+#CPP{
+width:45%;
+background:#044F88;
+}
+#Github{
+width:55%;
+background:#8F00FF;
+}
+#NextJs{
+width:55%;
+background:#FF69B4;
+}
+#Blogger{
+width:90%;
+background:#FC4F08;
+}
 .all-projects::-webkit-scrollbar{
   width: 4px;
 }

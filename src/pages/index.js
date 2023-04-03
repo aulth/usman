@@ -29,7 +29,7 @@ export default function Home({ name }) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#2D2F33" ></meta>
         <link rel="canonical" href="https://mohd-usman.vercel.app/" />
-        <link rel="alternate" href="https://mohd-usman.vercel.app/" hreflang="en-in" />
+        <link rel="alternate" href="https://mohd-usman.vercel.app/" hrefLang="en-in" />
         {/* facebook open graph  */}
         <meta property="og:title" content="Mohd Usman - full stack web developer" />
         <meta property="og:site_name" content="Mohd Usman" />

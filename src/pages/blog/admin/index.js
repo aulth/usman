@@ -32,7 +32,13 @@ const Index = ({ data }) => {
 
 export default Index
 export async function getServerSideProps(context) {
-  const response = await fetch(process.env.NODE_ENV == 'production' ? 'https://mohd-usman.vercel.app/api/blog/fetchall' : 'http://localhost:3000/api/blog/fetchall')
+  const response = await fetch(process.env.NODE_ENV == 'production' ? 'https://mohd-usman.vercel.app/api/blog/securefetch' : 'http://localhost:3000/api/blog/securefetch', {
+    method:'POST',
+    headers:{
+      'content-type':'application/json'
+    },
+    body:JSON.stringify({adminPin:process.env.NEXT_PUBLIC_ADMIN_PIN})
+  })
   var data = await response.json();
   if (data.success) {
     data = data.article;

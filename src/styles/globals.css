@@ -36,11 +36,23 @@ body::-webkit-scrollbar-thumb {
     text-transform: capitalize;
 }
 .article-body h2{
-  font-size: 1.125rem/* 18px */;
+  font-size: 1.35rem/* 18px */;
     line-height: 1.75rem/* 28px */;
     font-weight: 700;
     margin:5px 0px 5px 0px;
     text-transform: capitalize;
+}
+.article-body h3{
+  font-size: 1.20rem/* 18px */;
+    line-height: 1.75rem/* 28px */;
+    font-weight: 600;
+    margin:5px 0px 5px 0px;
+    text-transform: capitalize;
+}
+.article-body h4, h5, h6 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 .article-body ol li{
   margin: 0;

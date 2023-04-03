@@ -39,6 +39,7 @@ const Navbar = () => {
                         <Link href={'/blog/category/story'} className='cursor-pointer hover:text-cyan-500 menu-item'>Story</Link>
                         <Link href={'/blog/category/tips'} className='cursor-pointer hover:text-cyan-500 menu-item'>Tips</Link>
                         <Link href={'/blog/category/thoughts'} className='cursor-pointer hover:text-cyan-500 menu-item'>Thoughts</Link>
+                        <Link href={'/blog/category/technology'} className='cursor-pointer hover:text-cyan-500 menu-item'>Technology</Link>
                     </ul>
                 </div>
                 <div className='md:block hidden'>

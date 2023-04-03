@@ -126,6 +126,7 @@ const Publish = () => {
                             <option value="story">Story</option>
                             <option value="tips">Tips</option>
                             <option value="thoughts">Thoughts</option>
+                            <option value="technology">Technology</option>
                         </select>
                     </div>
                     <div className="w-full flex flex-col p-2">

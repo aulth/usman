@@ -36,6 +36,17 @@ const Index = () => {
                                 </div>
                             </div>
                             <div className="w-full  rounded-lg border border-gray-300 h-60  xl:h-72 relative flex items-end">
+                                <img src="https://source.unsplash.com/random/?technology/" className='h-full w-full object-cover rounded-lg absolute top-0' alt="" />
+                                <Link href={"/blog/category/technology/"}>
+                                    <div className="w-full rounded-lg h-60  xl:h-72 absolute top-0 bg-gradient-to-tr  hover:from-cyan-400 from-gray-800 to-transparent"></div>
+                                </Link>
+                                <div className="w-full p-4 z-10 text-white">
+                                    <button className="text-sm">Technology</button>
+                                    <Link href={`/blog/category/technology/`} ><h2 className="font-bold text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam reiciendis amet et excepturi dolores corrupti fugit. Dolorum, quasi quod ipsum provident eveniet optio magni quis in! Explicabo vitae fuga deserunt.</h2></Link>
+                                    <span className='text-sm'></span>
+                                </div>
+                            </div>
+                            <div className="w-full  rounded-lg border border-gray-300 h-60  xl:h-72 relative flex items-end">
                                 <img src="https://source.unsplash.com/random/?story/" className='h-full w-full object-cover rounded-lg absolute top-0' alt="" />
                                 <Link href={"/blog/category/tips/"}>
                                     <div className="w-full rounded-lg h-60  xl:h-72 absolute top-0 bg-gradient-to-tr  hover:from-cyan-400 from-gray-800 to-transparent"></div>

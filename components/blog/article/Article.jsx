@@ -22,14 +22,14 @@ const Article = ({data}) => {
                     <PostComment id={data._id}/>
                 </div>
             </div>
-            <div className="w-full flex flex-col gap-4 xl:w-[40%]">
+            <aside className="w-full flex flex-col gap-4 xl:w-[40%]">
                 <div className="w-full rounded-lg bg-white">
                     <Popular />
                 </div>
                 <div className="w-full rounded-lg bg-white">
                     <Subscribe />
                 </div>
-            </div>
+            </aside>
         </div>
     )
 }

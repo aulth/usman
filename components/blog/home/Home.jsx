@@ -2,6 +2,7 @@ import React from 'react'
 import Popular from './Popular'
 import Story from './Story'
 import Subscribe from './Subscribe'
+import Technology from './Technology'
 import Thoughts from './Thoughts'
 import Tips from './Tips'
 const Home = ({data}) => {
@@ -15,7 +16,7 @@ const Home = ({data}) => {
                     <Thoughts data={data} />
                 </div>
                 <div className="w-full rounded-lg bg-white ">
-                    <Tips  data={data} />
+                    <Technology  data={data} />
                 </div>
             </div>
             <div className="w-full flex flex-col gap-4 xl:w-[40%] pb-4">

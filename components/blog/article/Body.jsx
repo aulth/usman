@@ -67,14 +67,24 @@ const Body = ({ data }) => {
         <>
             <Toaster position='top-right' />
             <div className="w-full rounded-lg p-4">
-                <h3 className="text-sm text-cyan-500"><Link href={'/blog'} className='hover:text-cyan-600 hover:underline'>Home</Link> &gt; <Link href={`/blog/category/${data.category}`} className='hover:text-cyan-600 hover:underline'>{data.category[0].toUpperCase() + data.category.slice(1).toLowerCase()}</Link></h3>
+                <nav className="text-sm text-cyan-500">
+                    <ol className='list-none p-0 inline-flex gap-1'>
+                        <li class="flex gap-1 items-center">
+                            <Link href={'/blog'} className='hover:text-cyan-600 hover:underline'>Home</Link>
+                            &gt;
+                        </li>
+                        <li class="flex items-center">
+                            <Link href={`/blog/category/${data.category}`} className='hover:text-cyan-600 hover:underline'>{data.category[0].toUpperCase() + data.category.slice(1).toLowerCase()}</Link>
+                        </li>
+                    </ol>
+                </nav>
                 <h1 className="font-bold text-2xl mt-2 capitalize">{data.title}</h1>
                 <div className="w-full flex justify-between items-center text-sm mt-2">
-                    <span className='flex items-center gap-1'><RiPencilFill />{getFormattedDate(data.createdAt)}</span>
+                    <time class="text-gray-500 text-sm"><span class="mr-1">Published:</span> {getFormattedDate(data.createdAt)}</time>
                     <button onClick={sharePost} className='hover:text-cyan-500'><AiOutlineShareAlt /></button>
                 </div>
-                <div className='mt-4 body article-body clear-none'>
-                </div>
+                <main className='mt-4 body article-body clear-none'>
+                </main>
             </div>
         </>
     )

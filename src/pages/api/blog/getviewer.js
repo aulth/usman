@@ -7,7 +7,6 @@ export default async function handler(req, res) {
         return res.json({ success: false, msg: "Method not allowed" });
     }
     const { link, data } = req.body;
-    console.log('getviewer api hitted')
     try {
         var existingArticle = await Article.findOne({ link: link });
         var existingData = existingArticle.viewers;

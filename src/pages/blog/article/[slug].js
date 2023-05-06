@@ -14,8 +14,8 @@ const ArticlePage = ({ data }) => {
         <>
           <Head>
             {/* <!-- Primary Meta Tags --> */}
-            <title>{data.title}</title>
-            <meta name="title" content={data.title} />
+            <title>{data.title.slice(0,69)}</title>
+            <meta name="title" content={data.title.slice(0,69)} />
             <meta name="description" content={data.content.slice(0,150).replace(/<[^>]+>/g, '')} />
 
             {/* <!-- Open Graph / Facebook --> */}

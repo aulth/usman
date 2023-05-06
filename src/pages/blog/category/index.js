@@ -4,10 +4,30 @@ import Link from 'next/link'
 import Popular from 'components/blog/home/Popular'
 import Subscribe from 'components/blog/home/Subscribe'
 import Footer from 'components/blog/Footer'
+import Head from 'next/head'
 const Index = () => {
     return (
         <>
-        
+            <Head>
+                {/* <!-- Primary Meta Tags --> */}
+                <title>Category - Mohd Usman Blog</title>
+                <meta name="title" content="Category - Mohd Usman Blog" />
+                <meta name="description" content="Discover diverse content on our category page. From tips to stories, thoughts to tech, join the conversation and expand your knowledge with our informative and engaging pieces." />
+
+                {/* <!-- Open Graph / Facebook --> */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content={`https://mohd-usman.vercel.app/blog/category/`} />
+                <meta property="og:title" content="Category - Mohd Usman Blog" />
+                <meta property="og:description" content="Discover diverse content on our category page. From tips to stories, thoughts to tech, join the conversation and expand your knowledge with our informative and engaging pieces." />
+                <meta property="og:image" content="" />
+
+                {/* <!-- Twitter --> */}
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content={`https://mohd-usman.vercel.app/blog/category/`} />
+                <meta property="twitter:title" content="Category - Mohd Usman Blog"/>
+                <meta property="twitter:description" content="Discover diverse content on our category page. From tips to stories, thoughts to tech, join the conversation and expand your knowledge with our informative and engaging pieces." />
+                <meta property="twitter:image" content="" />
+            </Head>
             <Navbar />
             <div className="container m-auto flex gap-4 flex-col xl:flex-row xl:px-16 px-4 py-4">
                 <div className="w-full flex flex-col gap-4 xl:w-[60%]">

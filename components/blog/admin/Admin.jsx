@@ -9,12 +9,22 @@ const Admin = ({ data }) => {
         e.preventDefault();
         if (document.getElementById('pin').value == process.env.NEXT_PUBLIC_ADMIN_PIN) {
             toast.success("Verified");
+            localStorage.setItem('usmanBlogPass', process.env.NEXT_PUBLIC_ADMIN_PIN);
             setAuthorized(true)
         } else {
             toast.error("You are not authorised");
             return;
         }
     }
+    useEffect(() => {
+      if(typeof window!==undefined){
+        const adminPass = localStorage.getItem('usmanBlogPass');
+        if(adminPass==process.env.NEXT_PUBLIC_ADMIN_PIN){
+            setAuthorized(true)
+        }
+      }
+    }, [])
+    
     return (
         <>
             <Toaster position='top-right' />

@@ -157,7 +157,7 @@ const Edit = ({ article }) => {
         }
         if (!data.cover) {
             toast.error('Please Upload Cover Photo')
-            // return;
+            return;
         }
         document.querySelector('.adminVerify').classList.remove('hidden');
     }

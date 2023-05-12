@@ -7,7 +7,7 @@ const Category = ({data}) => {
         <div className="container m-auto flex gap-4 flex-col xl:flex-row xl:px-16 px-4 py-4">
             <div className="w-full flex flex-col gap-4 xl:w-[60%]">
                 <div className="w-full rounded-lg bg-white ">
-                    <Posts data={data} />
+                    <Posts data={data=data.filter(item => item.live)} />
                 </div>
             </div>
             <div className="w-full flex flex-col gap-4 xl:w-[40%]">

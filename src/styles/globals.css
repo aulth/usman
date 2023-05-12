@@ -113,7 +113,15 @@ text-decoration:underline;
   font-size: 14px;
   margin:5px 0px 5px 0px;
 }
-
+.article-body blockquote {
+  margin: 0px 0px -15px 0px;
+  padding: 10px;
+  border-left: 5px solid #06B6D4;
+  background-color: #f9f9f9;
+  font-size: 1em;
+  line-height: 1.5;
+  font-style: italic;
+}
 /* Set background color for table header row */
 .article-body thead tr {
   background-color: #f5f5f5;

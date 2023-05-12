@@ -12,13 +12,13 @@ const Blog = ({data}) => {
             {/* <!-- Primary Meta Tags --> */}
             <title>Mohd Usman - Blog</title>
             <meta name="title" content="Mohd Usman - Blog" />
-            <meta name="description" content="" />
+            <meta name="description" content="Discover thought-provoking stories, tips, and insights on technology and more. Engage with our SEO-optimized blog for expertly written content that keeps you informed and entertained." />
 
             {/* <!-- Open Graph / Facebook --> */}
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://mohd-usman.vercel.app/blog" />
             <meta property="og:title" content="Mohd Usman - Blog" />
-            <meta property="og:description" content="" />
+            <meta property="og:description" content="Discover thought-provoking stories, tips, and insights on technology and more. Engage with our SEO-optimized blog for expertly written content that keeps you informed and entertained." />
             <meta property="og:image" content="" />
 
             {/* <!-- Twitter --> */}

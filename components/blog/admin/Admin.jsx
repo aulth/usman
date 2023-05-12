@@ -5,6 +5,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Admin = ({ data }) => {
     const [authorized, setAuthorized] = useState(false)
+    const [articleData, setArticleData] = useState(data);
     const verifyAdmin = (e) => {
         e.preventDefault();
         if (document.getElementById('pin').value == process.env.NEXT_PUBLIC_ADMIN_PIN) {
@@ -17,14 +18,28 @@ const Admin = ({ data }) => {
         }
     }
     useEffect(() => {
-      if(typeof window!==undefined){
-        const adminPass = localStorage.getItem('usmanBlogPass');
-        if(adminPass==process.env.NEXT_PUBLIC_ADMIN_PIN){
-            setAuthorized(true)
+        if (typeof window !== undefined) {
+            const adminPass = localStorage.getItem('usmanBlogPass');
+            if (adminPass == process.env.NEXT_PUBLIC_ADMIN_PIN) {
+                setAuthorized(true)
+            }
         }
-      }
     }, [])
-    
+    const fetchAll = async () => {
+        const response = await fetch('/api/blog/securefetch', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({ adminPin: process.env.NEXT_PUBLIC_ADMIN_PIN })
+        })
+        var data = await response.json();
+        if (data.success) {
+            setArticleData(data.article)
+        } else {
+            data = "";
+        }
+    }
     return (
         <>
             <Toaster position='top-right' />
@@ -41,9 +56,9 @@ const Admin = ({ data }) => {
                     authorized &&
                     <div className='flex   flex-col   gap-4'>
                         {
-                            data && data.length > 0 &&
-                            data.map((article, index) => {
-                                return <AdminPostItem data={article} key={index} />
+                            articleData && articleData.length > 0 &&
+                            articleData.map((article, index) => {
+                                return <AdminPostItem fetchAll={fetchAll} data={article} key={index} />
                             })
                         }
                     </div>

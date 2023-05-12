@@ -4,7 +4,7 @@ import { BiCheck } from 'react-icons/bi'
 import toast, { Toaster } from 'react-hot-toast';
 import { AiOutlineEye, AiOutlineDelete } from 'react-icons/ai'
 import Link from 'next/link'
-const AdminPostItem = ({ data }) => {
+const AdminPostItem = ({ data, fetchAll }) => {
     const deleteArticle = async (id) => {
         const response = await fetch('/api/blog/delete', {
             method: 'POST',
@@ -19,6 +19,23 @@ const AdminPostItem = ({ data }) => {
         } else {
             toast.error(json.msg);
         }
+        fetchAll();
+    }
+    const updateLive = async(id, live)=>{
+        const response = await fetch('/api/blog/updatestatus',{
+            method:'POST',
+            headers:{
+                'content-type':'application/json'
+            },
+            body:JSON.stringify({id:id, live:live})
+        })
+        const json = await response.json();
+        if(json.success){
+            toast.success(json.msg)
+        }else{
+            json.error(json.msg)
+        }
+        fetchAll()
     }
     return (
         <>
@@ -31,7 +48,7 @@ const AdminPostItem = ({ data }) => {
                         <button className='bg-gradient-to-tr flex gap-1 items-center  px-1.5 py-1 rounded-sm '><AiOutlineEye /><span className='text-[12px]'>{data.views}</span></button>
                     </div>
                     <div className="md:w-48 w-full  md:h-32 h-48 shrink-0 relative">
-                        <button className={`absolute top-2 left-2 bg-gradient-to-tr p-1 ${data.live ? 'bg-green-400' : 'bg-orange-400'} rounded-sm text-sm text-white`}>{data.live ? <BiCheck /> : <CiNoWaitingSign />}</button>
+                        <button onClick={()=>{updateLive(data._id, !data.live)}} className={`absolute top-2 left-2 bg-gradient-to-tr p-1 ${data.live ? 'bg-green-400' : 'bg-orange-400'} rounded-sm text-sm text-white`}>{data.live ? <BiCheck /> : <CiNoWaitingSign />}</button>
                         <img src={data.cover} className='w-full h-full rounded-lg object-cover' alt="" />
                     </div>
                     <div className="w-full flex flex-col justify-start">

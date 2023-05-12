@@ -1652,6 +1652,11 @@ quick-lru@^5.1.1:
   resolved "https://registry.npmjs.org/quick-lru/-/quick-lru-5.1.1.tgz"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
+quill-better-table@^1.2.10:
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/quill-better-table/-/quill-better-table-1.2.10.tgz#ed0e21cdbaff672189b902187720fde08ae2a96a"
+  integrity sha512-CFwxAQzt4EPCQuynQ65R/FU7Yu//kcDBb/rmBBOsFfO758+q50zvG/PDt4Lenv9DcrSgwnyNkfo4yeA5fzzVYQ==
+
 quill-delta@^3.6.2:
   version "3.6.3"
   resolved "https://registry.yarnpkg.com/quill-delta/-/quill-delta-3.6.3.tgz#b19fd2b89412301c60e1ff213d8d860eac0f1032"

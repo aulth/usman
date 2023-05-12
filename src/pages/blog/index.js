@@ -43,6 +43,7 @@ export async function getServerSideProps(context) {
   console.log(data)
   if (data.success) {
     data = data.article;
+    data = data.filter(item=>item.live)
   } else {
     data = "";
   }

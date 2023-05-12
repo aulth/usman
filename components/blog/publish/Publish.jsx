@@ -115,7 +115,7 @@ const modules = {
             "rgb(6,182,212)",
             "rgb(248,113,113)"
           ] }],
-        ['link', 'image', 'video'],
+        ['link', 'image', 'video', 'code-block'],
         ['clean'],
         [{ 'direction': 'rtl' }], 
     ],
@@ -127,21 +127,6 @@ const modules = {
 const Publish = () => {
     const [data, setData] = useState({ title: '', category: '', cover: '' });
     const [content, setContent] = useState('')
-    useEffect(() => {
-        if (typeof window != undefined) {
-            tinymce.init({
-                selector: 'textarea',
-                plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect typography inlinecss',
-                toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
-                tinycomments_mode: 'embedded',
-                tinycomments_author: 'Author name',
-                mergetags_list: [
-                    { value: 'First.Name', title: 'First Name' },
-                    { value: 'Email', title: 'Email' },
-                ]
-            });
-        }
-    }, [])
     const handleOnContentChange = (e) => {
         setContent(e);
     }
@@ -222,7 +207,6 @@ const Publish = () => {
     return (
         <>
             <Toaster position='top-right' />
-            <script src={`https://cdn.tiny.cloud/1/${process.env.NEXT_PUBLIC_TINYAPI}/tinymce/6/tinymce.min.js`} referrerpolicy="origin"></script>
             <div className="container m-auto px-4 py-4 md:px-12  relative">
                 <form onSubmit={handleOnPublish} className="w-full flex flex-col gap-4 bg-white rounded-lg p-4">
                     <div className="w-full flex justify-between">

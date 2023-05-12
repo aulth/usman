@@ -32,6 +32,7 @@ const Body = ({ data }) => {
             await navigator.share(shareData);
         } catch (err) {
             toast.error(err)
+            return;
         }
     }
     const getViewer = async (link) => {
@@ -65,6 +66,21 @@ const Body = ({ data }) => {
     }
     return (
         <>
+        <style>{`
+        pre {
+            background-color: #282c34;
+            border: 1px solid #555;
+            border-radius: 4px;
+            font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 1em 0;
+            padding: 1em;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            color: #fff;
+          }
+        `}</style>
             <Toaster position='top-right' />
             <div className="w-full rounded-lg p-4">
                 <nav className="text-sm text-cyan-500">
@@ -83,7 +99,7 @@ const Body = ({ data }) => {
                     <time class="text-gray-500 text-sm"><span class="mr-1">Published:</span> {getFormattedDate(data.createdAt)}</time>
                     <button onClick={sharePost} className='hover:text-cyan-500'><AiOutlineShareAlt /></button>
                 </div>
-                <main className='mt-4 body article-body clear-none'>
+                <main  className='mt-4 body article-body clear-none'>
                 </main>
             </div>
         </>

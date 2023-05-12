@@ -20,6 +20,7 @@ const QuillNoSSRWrapper = dynamic(import('react-quill'), {
 const modules = {
     toolbar: [
         [{ header: '1' }, { header: '2' }, { font: [] }],
+        [{ header: [3, 4, 5, 6] }],
         [{ size: [] }],
         ['bold', 'italic', 'underline', 'strike', 'blockquote'],
         [
@@ -121,7 +122,7 @@ const modules = {
                 "rgb(248,113,113)"
             ]
         }],
-        ['link', 'image', 'video'],
+        ['link', 'image', 'video', 'code-block'],
         ['clean'],
         [{ 'direction': 'rtl' }],
     ],
@@ -156,7 +157,7 @@ const Edit = ({ article }) => {
         }
         if (!data.cover) {
             toast.error('Please Upload Cover Photo')
-            return;
+            // return;
         }
         document.querySelector('.adminVerify').classList.remove('hidden');
     }
@@ -227,7 +228,6 @@ const Edit = ({ article }) => {
     return (
         <>
             <Toaster position='top-right' />
-            <script src={`https://cdn.tiny.cloud/1/${process.env.NEXT_PUBLIC_TINYAPI}/tinymce/6/tinymce.min.js`} referrerpolicy="origin"></script>
             <div className="container m-auto px-4 py-4 md:px-12  relative">
                 <form onSubmit={handleOnPublish} className="w-full flex flex-col gap-4 bg-white rounded-lg p-4">
                     <div className="w-full flex justify-between">
@@ -247,6 +247,8 @@ const Edit = ({ article }) => {
                             <option value="story">Story</option>
                             <option value="tips">Tips</option>
                             <option value="thoughts">Thoughts</option>
+                            <option value="technology">Technology</option>
+
                         </select>
                     </div>
                     <div className="w-full flex flex-col p-2">

@@ -17,6 +17,7 @@
     "next": "13.1.6",
     "nextjs-progressbar": "^0.0.16",
     "nodemailer": "^6.9.1",
+    "quill-better-table": "^1.2.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.0",

@@ -18,7 +18,7 @@ const AboutSection = () => {
             <AiOutlineEye className='text-xl' />
           </div>
           <p className='text-gray-300'>I am a front-end web developer proficient in creating dynamic, responsive websites and web applications with HTML, CSS, and JavaScript.</p>
-          <button onClick={()=>{filterProjects('Frontend')}} className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>11 Projects</button>
+          <button onClick={()=>{filterProjects('Frontend')}} className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>13 Projects</button>
         </div>
         <div className="w-full rounded shadow-2xl px-4 py-2">
           <div className="w-full flex justify-between items-center text-[#73F8AB]">
@@ -28,7 +28,7 @@ const AboutSection = () => {
             <BsCodeSlash className='text-xl' />
           </div>
           <p className='text-gray-300'>Experienced in server-side programming and databases, I aim to develop efficient and scalable backend solutions.</p>
-          <button  onClick={()=>{filterProjects('Backend')}}  className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>10 Projects</button>
+          <button  onClick={()=>{filterProjects('Backend')}}  className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>11 Projects</button>
         </div>
         <div className="w-full rounded  shadow-2xl px-4 py-2">
           <div className="w-full flex justify-between items-center text-[#73F8AB]">
@@ -38,7 +38,7 @@ const AboutSection = () => {
             <AiOutlineFire className='text-xl' />
           </div>
           <p className='text-gray-300'>As a full-stack web developer, I design and build dynamic websites and web applications from front-end to back-end</p>
-          <button  onClick={()=>{filterProjects('FullStack')}}  className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>10 Projects</button>
+          <button  onClick={()=>{filterProjects('FullStack')}}  className='uppercase mt-3 underline text-white hover:text-[#73F8AB] cursor-pointer'>11 Projects</button>
         </div>
       </div>
       <div className="w-full md:w-1/2 md:minh-[calc(100vh-60px)] p-4 flex flex-col justify-start">

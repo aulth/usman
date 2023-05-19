@@ -6,14 +6,16 @@ const LandingPage = () => {
   return (
     <div className="container md:px-12 px-2  m-auto flex flex-col-reverse md:flex-row justify-center md:h-[calc(100vh-60px)]">
         <div className="w-full md:w-1/2 md:mt-0 mt-16 md:h-[calc(100vh-60px)] flex flex-col items-start justify-center p-4 relative ">
+          <div className="flex gap-2 items-center">
           <div className="px-2 py-1 rounded hover:bg-[#73F8AB] text-[#73F8AB] hover:text-[#2D2F33] bg-transparent border border-[#73F8AB] duration-75 cursor-default z-10">Full Stack Web Developer</div>
+          </div>
           <div className="w-full my-4">
             <h2 className='md:text-4xl text-3xl font-mono leading-loose text-white'>Building the web</h2>
             <h2 className='md:text-3xl text-2xl font-mono leading-loose text-white'>Turning ideas into innovative solutions</h2>
           </div>
           <div className="w-full md:mb-24">
             <p className='font-sans  text-gray-300 leading-loose'>Delivering beautiful, professional websites that exceed expectations.</p>
-            <a href="#" className='uppercase text-[#73F8AB] underline'>Let's chat</a>
+            <a href="https://wa.me/919839872992" target='_blank' rel='nofollow' className='uppercase text-[#73F8AB] underline'>Let's chat</a>
           </div>
           <div className="w-full flex justify-start md:absolute bottom-0">
             <div className="py-1 flex items-center">
@@ -24,7 +26,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="py-1 ml-8 flex items-center">
-              <div className='text-[3.125rem] text-white'>21</div>
+              <div className='text-[3.125rem] text-white'>23</div>
               <div className="flex flex-col items-start justify-center mt-1 ml-1 text-gray-300">
                 <p className=''>Projects</p>
                 <p className=''>Completed</p>

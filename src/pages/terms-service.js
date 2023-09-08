@@ -28,7 +28,7 @@ const support = () => {
 
                     <h2 className="text-2xl font-semibold mb-2">9. Contact Information</h2>
                     <p className="mb-4">
-                        If you have any questions about these Terms, please contact us at support@webdevco.com.
+                        If you have any questions about these Terms, please contact us at mohdusman.developer@gmail.com.
                     </p>
 
                     <p className="text-sm text-gray-300">

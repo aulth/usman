@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins, Inter } from "next/font/google";
+import { Geist, Poppins, Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
@@ -13,11 +13,13 @@ const poppins = Poppins({
 const geist = Geist({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--geist-font",
+  subsets: ['latin']
 })
 
 const inter = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--inter-font",
+  subsets: ['latin']
 })
 
 export const metadata: Metadata = {

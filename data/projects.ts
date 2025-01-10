@@ -32,7 +32,7 @@ export const projects: Project[] = [
       { _id: 5, link: "/images/portfolio/projects/3dconstractionllc/completedprojects.jpg" },
       { _id: 6, link: "/images/portfolio/projects/3dconstractionllc/admin.jpg" },
     ],
-    live: "",
+    live: "https://www.3dconstractionllc.com/",
     github: "https://github.com/aulth/3dconstractionllc",
     technologies: ["nextjs", "vercel"]
   }

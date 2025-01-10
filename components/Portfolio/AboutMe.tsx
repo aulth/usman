@@ -3,7 +3,7 @@ import React from 'react'
 export default function AboutMe() {
     return (
         <>
-            <div className="max-w-5xl w-full mx-auto mt-[130px] font-inter">
+            <div id='about-me' className="max-w-5xl w-full mx-auto mt-[130px] font-inter scroll-mt-16">
                 <h2 className="subheading">About me</h2>
                 <span className='explore'>explore now</span>
                 <p className="text-center mx-auto md:max-w-[917px] w-full mt-[40px] text-white font-extralight text-[14px] tracking-wider">

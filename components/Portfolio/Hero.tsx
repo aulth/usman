@@ -1,7 +1,5 @@
 import { Facebook, Github, Instagram, Linkedin, Twitter } from 'lucide-react'
-import Image from 'next/image'
 import React from 'react'
-
 export default function Hero() {
     return (
         <>
@@ -15,19 +13,19 @@ export default function Hero() {
                     Passionate Software Developer specializing in Next.js and Spring Boot, dedicated to building scalable, elegant, and user-friendly web applications.
                 </p>
                 <div className="flex md:gap-8 gap-4 items-center justify-center max-[587px] mx-auto mt-[20px] text-white">
-                    <a href="http://github.com/aulth" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/aulth" target="_blank" rel="noopener noreferrer">
                         <Github strokeWidth={1} />
                     </a>
-                    <a href="http://github.com/aulth" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/yem.usman" target="_blank" rel="noopener noreferrer">
                         <Facebook strokeWidth={1} />
                     </a>
-                    <a href="http://github.com/aulth" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/usman-mohd" target="_blank" rel="noopener noreferrer">
                         <Linkedin strokeWidth={1} />
                     </a>
-                    <a href="http://github.com/aulth" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/mohdusman.x" target="_blank" rel="noopener noreferrer">
                         <Instagram strokeWidth={1} />
                     </a>
-                    <a href="http://github.com/aulth" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.twitter.com/mohdusman_x" target="_blank" rel="noopener noreferrer">
                         <Twitter strokeWidth={1} />
                     </a>
                 </div>

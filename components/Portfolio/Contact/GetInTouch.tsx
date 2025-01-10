@@ -32,13 +32,13 @@ export default function GetInTouch() {
     }
     return (
         <>
-            <div className="max-w-5xl w-full mx-auto mt-[130px] font-inter mb-24">
+            <div id='contact' className="max-w-5xl w-full mx-auto mt-[130px] font-inter mb-24  md:scroll-mt-16 scroll-mt-8">
                 <h2 className="subheading">get in touch 👋🏻</h2>
                 <span className='explore'>explore now</span>
                 <form action={formAction} className="w-full grid gap-10 mt-[40px] mx-auto">
                     <div className="w-full grid md:grid-cols-2 gap-8">
                         <div className="grid w-full items-center gap-1.5">
-                            <Label htmlFor="name" className='text-primary'>Email</Label>
+                            <Label htmlFor="name" className='text-primary'>Name</Label>
                             <div className="w-full flex justify-start items-center border rounded-[8px] pl-2 focus-within:border-blue-500">
                                 <UserRound strokeWidth={1} className='text-white' />
                                 <Input required type="text" id="name" name='name' placeholder="Enter your name.." className='text-white border-none ml-2 pl-0.5  focus-visible:ring-0 rounded-[8px] rounded-l-none' />
@@ -60,7 +60,7 @@ export default function GetInTouch() {
                                 <Textarea required placeholder="Type your message here." id='message' name='message' className='rounded-[8px] h-52 text-white indent-6 border-none focus-visible:ring-0' />
                             </div>
                         </div>
-                        <Button type='submit' className='!rounded-button font-poppins text-black bg-white hover:bg-secondary border text-sm font-medium'><Send /> Send</Button>
+                        <Button disabled={isPending} type='submit' className='!rounded-button font-poppins text-black bg-white hover:bg-secondary border text-sm font-medium'>{isPending ? "Sending" : <><Send /> Send</>}</Button>
                     </div>
                 </form>
             </div>

@@ -21,12 +21,12 @@ export default function ProjectInfo({ data }: { data: Project }) {
         </div>
         <div className="flex gap-3">
           <div className='gradient grid items-center rounded-full aspect-square p-[1.5px]'>
-            <a target='_blank' href={"/"} className='bg-black text-white p-1 rounded-full aspect-square flex justify-center items-center'>
+            <a target='_blank' href={data?.github} className='bg-black text-white p-1 rounded-full aspect-square flex justify-center items-center'>
               <Github size={18} strokeWidth={1} />
             </a>
           </div>
           <div className='gradient grid items-center rounded-full aspect-square p-[1.5px]'>
-            <a target='_blank' href={"/"} className='bg-black text-white p-1 rounded-full aspect-square flex justify-center items-center'>
+            <a target='_blank' href={data?.live} className='bg-black text-white p-1 rounded-full aspect-square flex justify-center items-center'>
               <Globe size={18} strokeWidth={1} />
             </a>
           </div>

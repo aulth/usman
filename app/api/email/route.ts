@@ -1,12 +1,10 @@
 import sgMail from '@sendgrid/mail'
-sgMail.setApiKey(`${process.env.SENDGRID_API_KEY}`);
 
 export async function POST(request: Request): Promise<Response> {
+    const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+    console.log(SENDGRID_API_KEY);
+    sgMail.setApiKey(`${SENDGRID_API_KEY}`);
     const body = await request.json();
-    try {
-        const response = await sgMail.send(body);
-        return new Response(JSON.stringify({success: true}), {status: response[0].statusCode});
-    } catch (error) {
-        return new Response(JSON.stringify({success: false}), {status: 500})
-    }
+    await sgMail.send(body);
+    return new Response(JSON.stringify({success: true}));
 }
